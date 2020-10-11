@@ -1,3 +1,3 @@
 <?php
-$domain = 'http://localhost:80/arsha/';
+$domain = 'http://vliferoleplay.fr/';
 ?>
