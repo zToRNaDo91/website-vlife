@@ -43,8 +43,9 @@ header ('Location: ../');
 				<div class="dropdown-menu" style ="text-align: center;" aria-labelledby="dropdownMenuButton">';
 				 if ($admin or $recruteur){ ?>
 				<a class="dropdown-item" href="<?php echo $domain; ?>admin">Panel Staff</a>
-				<a class="dropdown-item" href="<?php echo $domain; ?>recrutement">Nous rejoindre</a>
+				
 				<?php }?>
+				<a class="dropdown-item" href="<?php echo $domain; ?>recrutement">Nous rejoindre</a>
 				<a type="button" class="dropdown-item" data-toggle="modal" data-target="#FAQ">Foire aux questions</a>
 				<hr>
 				<a class="dropdown-item" href="?action=logout">Déconnexion</a>
