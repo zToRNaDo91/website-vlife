@@ -530,7 +530,7 @@ if ($admin or $recruteur) {
 			   $prenom = $row['prenom']; 
 			   */
 			   
-			   if (mysqli_query($mysqli, $sql)) {
+			  if (mysqli_query($mysqli, $sql)) {
 			   // Notification par mail ou discord
 				//if ((include 'mail2.php') == TRUE) {
                     // header("Refresh:0");

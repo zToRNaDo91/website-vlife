@@ -111,13 +111,24 @@
 			$rowform = mysqli_fetch_assoc($formulaire);
 			$form = $rowform['name'];
 			 $row = mysqli_fetch_assoc($result);
+			$nb = mysqli_num_rows($result);
+			if ($nb == 1) {
 			$date_est = $row ['date_traitement'];
+			}
+			else {
+			$date_est = '';
+			}
 			$date0 = date("Y-m-d H:i:s", strtotime($date_est));
 			$date = date("Y-m-d", strtotime($date_est));
 			$timestamp = strtotime(date("d-m-Y H:i:s ", strtotime($date_est)) . " +2 week");
 			$date2 = date("d/m/Y à H:i:s", $timestamp);
 			// date traitement accepter
+			if ($nb == 1) {
 			$date_est2 = $row ['date_recrutoral'];
+			}
+			else {
+			$date_est2 = '';
+			}
 			$date03 = date("Y-m-d H:i:s", strtotime($date_est2));
 			$date3 = date("Y-m-d", strtotime($date_est2));
 			$timestamp2 = strtotime(date("d-m-Y H:i:s ", strtotime($date_est2)) . " +2 week");
