@@ -9,7 +9,7 @@
 	  <title>vLife Roleplay</title>
 	  <meta content="" name="description">
 	  <meta content="" name="keywords">
-	  
+	  <meta name="google-site-verification" content="WFSp5XR_4u1pVnEdqWJf7eQnw-NvDCPG3gwn41zBX7o" />
 	  	  <!-- Favicons -->
 		<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="assets/img/favicon/favicon.png" type="image/png">
@@ -140,8 +140,8 @@
 			  </div>
 			  <div class="col-lg-6 pt-4 pt-lg-0">
 				<p>
-				  Nous avons été créer en mars 2019, nous avons pour but de rassembler toutes personnes intéressées par les services de secours. 
-				  Nous étions à la base sur GMOD, voyant nos capacités être limité, nous avons rapidement évolué vers GTA V. 
+				  Nous avons été crée en mars 2019, nous avons pour but de rassembler toutes personnes intéressées par les services de secours. 
+				  Nous étions à la base sur GMOD, voyant nos capacités être limitées, nous avons rapidement évolué vers GTA V. 
 				  Toujours en continuant à offrir plus de contenus et dans le confort d'une communauté toujours plus grandissante.
 				</p>
 				<!--<a href="#" class="btn-learn-more">Learn More</a> -->
@@ -291,7 +291,7 @@
 			  <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
 				<div class="icon-box">
 				  <div class="icon"><i class="bx bx-file"></i></div>
-				  <h4><a href="https://www.commods.fr/" target="_blanck">Mods unique</a></h4>
+				  <h4><a href="https://www.commods.fr/" target="_blanck">Mods uniques</a></h4>
 				  <p>Nous avons en notre possession plusieurs mods et véhicules uniques au serveur.</p>
 				 
 				</div>
@@ -301,7 +301,7 @@
 				<div class="icon-box">
 				  <div class="icon"><i class="bx bx-tachometer"></i></div>
 				  <h4><a target="_blank" href="https://cosmhost.com/index.php">Performance</a></h4>
-				  <p>Nous avons un serveur performant, héberger par CosmHost. </p>
+				  <p>Nous avons un serveur performant, hébergé par CosmHost. </p>
 				</div>
 			  </div>
 
@@ -309,7 +309,7 @@
 				<div class="icon-box">
 				  <div class="icon"><i class="bx bx-layer"></i></div>
 				  <h4><a href="#services">Professionnalisme</a></h4>
-				  <p>Support de transmission et partage de connaissances entre professionnelles et passionnées. </p>
+				  <p>Support de transmission et partage de connaissances entre professionnels et passionnés. </p>
 				</div>
 			  </div>
 
@@ -341,7 +341,7 @@
 
 			<div class="section-title">
 			  <h2>Portfolio</h2>
-			  <p>Le serveur est constitué de plusieurs services de secours, dont la Police, les Sapeur-Pompier et le S.A.M.U.</p>
+			  <p>Le serveur est constitué de plusieurs services de secours, dont la Police, les Sapeurs-Pompiers et le S.A.M.U.</p>
 			</div>
 
 			<ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">

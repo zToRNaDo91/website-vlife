@@ -44,11 +44,11 @@ header ('Location: ../');
 				  </div>
 
 				  <div class="col-lg-3 col-md-6 footer-links">
-					<h4>Liens Utile</h4>
+					<h4>Liens Utiles</h4>
 					<ul>
 					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>partenaire.php">Partenaire</a></li>
 					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>index.php#about">Présentation</a></li>
-					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>mentions.php">Mention légale</a></li>
+					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>mentions.php">Mentions légales</a></li>
 					</ul>
 				  </div>
 
@@ -65,7 +65,7 @@ header ('Location: ../');
 
 				  <div class="col-lg-3 col-md-6 footer-links">
 					<h4>Nos réseaux sociaux</h4>
-					<p>Vous pouvez nous suivre via nos réseaux sociaux pour toujours rester informer.</p>
+					<p>Vous pouvez nous suivre via nos réseaux sociaux pour toujours rester informé.</p>
 					<div class="social-links mt-3">
 					  <a href="https://twitter.com/vLifeRoleplay" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
 					  <a href="https://www.youtube.com/channel/UCGIaj2gVvI2P49KcdKPHUJQ" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
