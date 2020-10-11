@@ -1,0 +1,139 @@
+.oral .custom-radio  {
+		width : 150px;
+		}
+.oral .invalid-feedback {
+	width : 250px;
+}
+.icon-help {
+	font-size: 20px;
+	color: #47b2e4;
+	cursor:pointer;
+}
+.fluide {
+  font-weight: 550;
+  }
+  .hr {
+  border:none;
+  border-top:1px dotted gray;
+  color:black;
+  background-color:#fff;
+  height:1px;
+  width:95%;
+    }
+  .ui-widget-overlay {
+background:white;
+}
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+.well-responsive {
+max-width:700px;
+margin-bottom: 10px;
+}
+.centre {
+padding-left:100px;
+margin-right: 50px;
+}
+.fluide {
+ display:grid; 
+ max-width:700px; 
+ background-color:white; 
+ margin-top: 40px;
+ margin-left: 40px;
+ box-shadow: 5px 5px #888888;padding-bottom: 100px;
+}
+
+.data {
+	background: #F0F0F0;
+	font-size: 14px;
+	color: gray;
+	white-space: pre-line;
+	overflow: hidden;
+	word-break: break-all;
+	max-width: 400px;
+	resize: vertical;
+	max-height: 220px;
+	min-height: 30px;
+	padding : 5px;
+}
+
+textarea {
+width : 400px;
+max-width : 400px;
+max-height : 300px;
+resize : vertical;
+}
+
+@media (max-width: 750px) {
+	textarea {
+	width : 280px;
+	max-width : 280px;
+	min-height : 200px;
+	resize:none;
+	}
+	.data {
+	background: #F0F0F0;
+	padding : 5px;
+	max-height: none;
+	color: gray;
+	white-space: pre-line;
+	overflow: hidden;
+	word-break: break-all;
+	max-width: 295px;
+	resize: none;
+	display: inline-table;
+	}
+	.centre {
+	padding-left:0px;
+	margin-right: 0px;
+	}
+	.well-responsive {
+	max-width:370px;
+	margin-bottom: 0px;
+	background: white;
+	}
+	.fluide {
+	 display:grid; 
+	 max-width:300px; 
+	 background-color:white; 
+	 margin-top: 0px;
+	 margin-left: 0px;
+	}
+}
+
+
+legend {
+	display: block;
+	width: 280px;
+	padding: 0;
+	margin-bottom: 0px;
+	font-size: 21px;
+	line-height: inherit;
+	color: #333;
+	border: 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.header {
+	height: 1px;
+	width: 100%;
+	background-color: gray;
+}
+
+.img-rounded {
+  transition: transform .2s; /* Animation */
+}
+
+.img-rounded:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+ .img-rounded.selected:after, .img-rounded:hover:after
+{
+     transform: scale(2) rotate(0.1deg);
+}

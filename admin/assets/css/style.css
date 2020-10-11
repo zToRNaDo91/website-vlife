@@ -1,0 +1,44 @@
+#stat .col-md {
+	max-width: 16%;
+	}
+	#stat .sticker {
+	width: 50px;
+	height: 50px;
+	background: orange; 
+	padding: 10px; 
+	display:inline-block; 
+	border-radius:50px;
+	}
+	#stat .red {
+	background : red;
+	}
+	#stat .green {
+	background : green;
+	}
+	#stat .blue {
+	background : blue;
+	}
+	#stat .sticker .nc-icon {
+	font-size: 30px;
+	color:white;
+	}
+	#stat .card-category {
+	float: right;
+	vertical-align:top;
+	display:inline-block;
+	}
+	#stat .card-category .card-title{
+	font-size:20px;
+	}
+	#stat .card-body {
+	display: inline-block; 
+	padding:0px 15px 10px 15px;
+	}
+	#stat .stats {
+	font-size:0.9em;
+	}
+	@media(max-width :1191px){
+		#stat .col-md {
+		max-width: 250px;
+		}
+	}
