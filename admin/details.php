@@ -145,8 +145,8 @@ if ($admin or $recruteur) {
 	$time = $row['met'];
     $numb = strlen($time);
 	if (!empty ($time)) {
-	   if ($numb >= 54 ) {
-	    echo '<br><div readonly class="form-control-plaintext data">'.$time.'</div><br><br>';
+	   if ($numb >= 32 ) {
+	    echo '<br><div readonly class="form-control-plaintext data">'.$time.'</div>';
 	    } else {
 	       echo '<br> '. $time. '<div class ="hr"></div> <br>';
 	        
@@ -158,7 +158,7 @@ if ($admin or $recruteur) {
 	
 	
 	echo "En posession d'un micro ? <span style='background-color:yellow;'>".$row['micro']."</span><br>";
-	echo "En possession de GTA V sur PC ? <span style='background-color:yellow;'>".$row['gta']."</span><br><br>";
+	echo "En possession de GTA V sur PC ? <span style='background-color:yellow;'>".$row['gta']."</span><br><br><br>";
 	
 	echo 'Disponibilités en période congé/vacance :<br>';
 	$conge = $row['conge'];
@@ -167,7 +167,7 @@ if ($admin or $recruteur) {
 	echo $conge,'<div class ="hr"></div><br>';
 	}
 	else {
-	 echo '<div readonly class="form-control-plaintext data">'.$conge.'</div><br><br>';
+	 echo '<div readonly class="form-control-plaintext data">'.$conge.'</div><br>';
 	}
 	echo 'Disponibilités en période scolaire/travail :<br>';
 	$travail = $row['travail'];
@@ -176,7 +176,7 @@ if ($admin or $recruteur) {
 	echo $travail,'<div class ="hr"></div><br>';
 	}
 	else {
-	 echo '<div readonly class="form-control-plaintext data">'.$travail.'</div><br><br>';
+	 echo '<div readonly class="form-control-plaintext data">'.$travail.'</div><br>';
 	}
 	echo 'Impératifs pouvant occassioné un retard ou une absence :<br>';
 	$absent = $row['absent'];
@@ -185,13 +185,13 @@ if ($admin or $recruteur) {
 	echo $absent,'<div class ="hr"></div><br>';
 	}
 	else {
-	 echo '<div readonly class="form-control-plaintext data">'.$absent.'</div><br><br>';
+	 echo '<div readonly class="form-control-plaintext data">'.$absent.'</div><br>';
 	}
 	echo 'Disponibilité de 21h jusqu\'à minuit:<br>';
 	$dispo = $row['dispo'];
 	$nbdispo = strlen($dispo);
 	if ($nbdispo <= 32 ) {
-	echo $dispo,'<div class ="hr"></div><br>';
+	echo $dispo,'<div class ="hr"></div><br><br>';
 	}
 	else {
 	 echo '<div readonly class="form-control-plaintext data">'.$dispo.'</div><br><br>';
