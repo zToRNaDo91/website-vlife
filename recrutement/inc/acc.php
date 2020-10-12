@@ -72,12 +72,34 @@ function myFunction() {
 							- Vous devez avoir pris le temps de lire la FAQ <i style="font-style:italic">(Disponible en cliquant sur votre pseudo en haut à droite)</i><br>
 							- Vous devez être sûr d'être disponible avant de prendre rendez-vous.<br>
 							- Du sérieux et une rigueur à toute épreuve.<br>
-							- <?php echo '<b>Vous devez</b>
+							- <?php 
+							if ($poste == 'Opérateur 15' or $poste == 'Opérateur 17' or $poste == 'Opérateur 18'){ 
+								if ($poste == 'Opérateur 17') {
+								$notif = '@Officier PN';
+								} elseif ($poste == 'Opérateur 15') {
+								$notif = '@Cadre SAMU';
+								} else { 
+								$notif ='@Officier SP' ;
+								}
+							} elseif ($poste == 'Police' or $poste == 'Pompier' or $poste =='SAMU')
+								{
+								if ($poste == 'Police') {
+								$notif = '@Officier PN'; 
+								} elseif ($poste == 'Pompier') {
+								 $notif ='@Officier SP' ;
+								 } else { $notif = '@Cadre SAMU';}
+							}else {
+							$notif = '@Ressources Humaines 👨‍🎓';
+							}
+							
+							
+							echo '<b>Vous devez</b>
 							<button class ="btn btn-info btn-fill copy" onclick="myFunction()">
 							  copier
-							  </button> <b>le format*</b>
+							  </button>* <b>le format</b>
 							<textarea style ="white-space: pre-line;height:0px;width:0px;resize:none;" type="text" 
-							id="myInput" readonly>**Numéro de candidature** : $'.$id.'
+							id="myInput" readonly>'.$notif.'
+**Numéro de candidature** : $'.$id.'
 **Pseudo** : '.$pseudo.'
 **Poste** : '.$poste.'
 **ID Discord** '.$user->id.'
