@@ -42,7 +42,7 @@ function myFunction() {
 				if ($oral == '') {
 				echo '<div class="entretien">Vous avez désormais un entretien oral à passer. <br>';
 				
-				echo 'Avant toute chose, merci de lire ces<a href="#" data-toggle="modal" data-target="#information"> informations</a></div>';
+				echo 'Avant toute chose, merci de lire ces <button type="button" href="#" data-toggle="modal" data-target="#information" class="btn btn-info btn-fill copy"> informations</button></div>';
 				echo '<p align=center>Le STAFF vLife.</p>';
 				}
 				if ($oral == 'Accepter')
@@ -75,13 +75,13 @@ function myFunction() {
 							- <?php echo '<b>Vous devez</b>
 							<button class ="btn btn-info btn-fill copy" onclick="myFunction()">
 							  copier
-							  </button> <b>le format</b>
+							  </button> <b>le format*</b>
 							<textarea style ="white-space: pre-line;height:0px;width:0px;resize:none;" type="text" 
 							id="myInput" readonly>**Numéro de candidature** : $'.$id.'
 **Pseudo** : '.$pseudo.'
 **Poste** : '.$poste.'
 **ID Discord** '.$user->id.'
-**Disponibilité** : *Veuillez remplacer par vos disponibilités*</textarea>'; ?>
+**Disponibilité** : *Veuillez remplacer par vos disponibilités*</textarea><br><small>*Le bouton sert à copier le format.</small>'; ?>
 							 <br>
 							
 							</label>
