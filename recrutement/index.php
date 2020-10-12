@@ -214,7 +214,7 @@
 
 			<div class="section-title">
 			  <h2>Bulletin d\'adhésion</h2>
-			  <p>Veuiller vous connectez pour accéder à ce contenu</p>
+			  <p>Veuillez vous connecter pour accéder à ce contenu</p>
 				<i>Merci de votre compréhension.</i>
 			</div>
 		</div>

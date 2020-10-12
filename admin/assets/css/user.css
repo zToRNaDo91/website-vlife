@@ -1,4 +1,9 @@
-.switch {
+	@media (max-width: 768px) {
+	.modal {
+	max-width:350px;
+	}
+	}
+	.switch {
 	  display: inline-block;
 	  height: 24px;
 	  position: relative;

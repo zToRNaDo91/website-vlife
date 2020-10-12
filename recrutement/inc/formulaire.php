@@ -138,44 +138,32 @@ header ('Location: ../');
 			
 				<div class="col-md-5 col-sm-5 col-xs-12 form-group">
 					<label class="labeltext">Avez-vous un microphone ? <span style='color:red'>*</span></label><br>
-					<div class="form-check">
+					
+					<div class="custom-control custom-radio" style="display:inline-block">
+					  <input class="custom-control-input" type="radio" id="micro1" name="micro" value="Oui" checked>
+					  <label class="custom-control-label" for="micro1">Oui</label>
+					</div>   
+					<div class="custom-control custom-radio">
+					  <input type="radio" id="micro2" name="micro" value="Non" class="custom-control-input">
+					  <label class="custom-control-label" for="micro2">Non</label>
+					 </div>	
 
-					<label class="customradio"><span class="radiotextsty">Oui</span>
-					  <input type="radio" id="micro1" checked="" name="micro" value="Oui" data-rule="required">
-					  <span class="checkmark"></span>
-					</label>        
-					<label class="customradio"><span class="radiotextsty">Non</span>
-					  <input type="radio" name="micro" id="micro2" value="Non">
-					  <span class="checkmark"></span>
-					</label>
-
-					</div>
-					<div class="invalid-feedback">
-					  Merci de remplir cette partie.
-					</div>
 				</div>
 				
 				
 				<div class="col-md-6 col-sm-6 col-xs-12 form-group">
 					<label class="labeltext">Avez-vous le jeu GTA V (FiveM) sur PC ? <span style='color:red'>*</span></label><br>
-					<div class="form-check">
-
-					<label class="customradio"><span class="radiotextsty">Oui</span>
-					  <input type="radio" id="gta1" name="gta" checked="" value="Oui" data-rule="required">
-					  <span class="checkmark"></span>
-					</label>        
-					<label class="customradio"><span class="radiotextsty">Non</span>
-					  <input type="radio" name="gta" id="gta2" value="Non">
-					  <span class="checkmark"></span>
-					</label>
-
-					</div>
-					<div class="invalid-feedback">
-					  Merci de remplir cette partie.
-					</div>
+				
+					<div class="custom-control custom-radio" style="display:inline-block">
+					  <input class="custom-control-input" type="radio" id="gta1" name="gta" value="Oui" checked>
+					  <label class="custom-control-label" for="gta1">Oui</label>
+					</div>   
+					<div class="custom-control custom-radio">
+					  <input type="radio" id="gta2" name="gta" value="Non" class="custom-control-input">
+					  <label class="custom-control-label" for="gta2">Non</label>
+					 </div>	
 				</div>
-			
-		
+				  
 				  </div>
 				  
 				  <div class="tab">
@@ -258,21 +246,14 @@ header ('Location: ../');
 				
 				<div class="col-md-10 col-sm-10 col-xs-12 form-group">
 					<label class="labeltext" for="metier">Avez-vous de l'expérience réel, dans un métier de secours ? <span style='color:red'>*</span></label><br>
-					<div class="form-check">
-
-					<label class="customradio"><span class="radiotextsty">Oui</span>
-					  <input type="radio" id="metier1" name="metier" value="Oui"  onclick="show(1,2)" required>
-					  <span class="checkmark"></span>
-					</label>        
-					<label class="customradio"><span class="radiotextsty">Non</span>
-					  <input type="radio" name="metier" id="metier2" value="Non" onclick="hide(1,2)" required checked>
-					  <span class="checkmark"></span>
-					</label>
-					<div class="invalid-feedback">
-						  Merci de remplir cette partie.
-						</div>
-					</div>
-					
+					<div class="custom-control custom-radio" style="display:inline-block">
+					  <input class="custom-control-input" type="radio" id="metier1" name="metier" value="Oui"  onclick="show(1,2)">
+					  <label class="custom-control-label" for="metier1">Oui</label>
+					</div> 
+					<div class="custom-control custom-radio">
+					  <input type="radio" id="metier2" name="metier" value="Non"  onclick="hide(1,2)" class="custom-control-input" checked>
+					  <label class="custom-control-label" for="metier2">Non</label>
+					 </div>					
 				</div>
 				
 				<div class="form-group" id ="1" style="display:none;">

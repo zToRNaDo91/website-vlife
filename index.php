@@ -325,7 +325,7 @@
 			<div class="row">
 			  <div class="col-lg-9 text-center text-lg-left">
 				<h3>Devenir Civil ?</h3>
-				<p>Vous avez 15 ans et vous souhaitez tenter l'expérience vLife ? Mettez un pied dans le métier et jouez avec des professionnels et passionnés de la <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Brigade de sapeurs-pompiers de Paris">BSPP</a> au sein de notre serveur GTAV !</p>
+				<p>Vous avez 15 ans et vous souhaitez tenter l'expérience vLife ? Mettez un pied dans le métier et jouez avec des professionnels et passionnés au sein de notre serveur GTAV !</p>
 			  </div>
 			  <div class="col-lg-3 cta-btn-container text-center">
 				<a class="cta-btn align-middle" href="recrutement/">Nous rejoindre</a>
