@@ -82,10 +82,10 @@
 		<img src="assets/img/cosmhost.png" alt="CosmHost"  width="300"><br><br>
 	   <p>
          Notre partenaire CosmHost propose un service d'hébergement web, de serveur de jeux et plus encore, à prix réduit.<br>
-		 Ils ont su nous accompagner tout au long de notre projet via leurs assistance personnel et efficace.<br>
-		 Encadrer par une équipe de plusieurs professionnels, ils permettent un suivi 24h/7j.<br>
+		 Ils ont su nous accompagner tout au long de notre projet via leur assistance personnelle et efficace.<br>
+		 Encadrés par une équipe de plusieurs professionnels, ils permettent un suivi 24h/7j.<br>
 		 Ils proposent également l'ajout de nom de domaine, un panel de gestion simplifiée et bien plus.<br>
-		 Ils comptent notamment parmi leurs prestataires online et de multiples communautés.
+		 Ils comptent notamment parmi leurs prestataires "online" et de nombreuses communautés.
 		 <br>
         </p>
 		<div class="social">

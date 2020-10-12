@@ -133,7 +133,7 @@
 				  L'organisation vLife est un serveur de jeu GTA V PC axé sur les services de secours français.
 				</p>
 				<ul>
-				  <li><i class="ri-check-double-line"></i> Remplis de passionné et de professionnel du métier</li>
+				  <li><i class="ri-check-double-line"></i> Remplis de passionnés et de professionnels du métier</li>
 				  <li><i class="ri-check-double-line"></i> Approche du rôleplay différente et enrichissante.</li>
 				  <li><i class="ri-check-double-line"></i> Discipline, respect et vigueur vous accompagneront.</li>
 				</ul>
@@ -781,7 +781,8 @@
 
 			<div class="section-title">
 			  <h2>Contact</h2>
-			  <p>Si vous êtes désireux de nous contacter, tant que le motif est impérieux.</p>
+			  <p>Si vous êtes désireux de nous contacter, veuillez remplir le formulaire ci-dessous.
+</p>
 				<i>Tout contact abusif ne recevra aucune réponse, merci de votre compréhension</i>
 			</div>
 
