@@ -9,6 +9,8 @@
 		 $staff_name = $rows['nom'];
 		 
 		if(mysqli_num_rows($staff)==1) {
+			$recruteur = false;
+			$admin = false;
 			if ($role == 'Recruteur') {
 			$recruteur=true;
 			}

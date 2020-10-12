@@ -116,7 +116,7 @@ include '../inc/connect.php';
 				<tr>
 					<th>#</th>
                     <th >Poste</th>
-                    <th>SteamID64</th>
+                    <th>Discord_ID</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
@@ -166,7 +166,7 @@ include '../inc/connect.php';
 				<tr>
 					<th>#</th>
                     <th>Poste</th>
-                    <th>SteamID64</th>
+                    <th>Discord_ID</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
@@ -211,7 +211,7 @@ include '../inc/connect.php';
 				<tr class="text-center">
 					<th>#</th>
                     <th>Poste</th>
-                    <th>SteamID64</th>
+                    <th>Discord_ID</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
@@ -256,7 +256,7 @@ include '../inc/connect.php';
 				<tr>
 					<th>#</th>
                     <th>Poste</th>
-                    <th>SteamID64</th>
+                    <th>Discord_ID</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
