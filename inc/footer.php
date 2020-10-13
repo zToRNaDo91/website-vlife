@@ -24,8 +24,7 @@ header ('Location: ../');
 				<div class="row justify-content-center">
 				  <div class="col-lg-6">
 					<h4>Rejoindre notre discord</h4>
-					<!--<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>-->
-					<a href = "https://discord.io/vliferp" type="button" target="_blank" class="join-discord">Discord vLife RP</a>
+					<a href = "https://discord.io/vliferp"  target="_blank" class="join-discord">Discord vLife RP</a>
 				  </div>
 				</div>
 			  </div>

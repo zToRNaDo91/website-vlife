@@ -27,7 +27,6 @@ header ('Location: ../');
 			  <li><a href="<?php echo $domain; ?>">Accueil</a></li>
 			  <li><a href="<?php echo $domain; ?>partenaire.php" name="partenaire.php">Partenaire</a></li>
 			  <li><a href="<?php echo $domain; ?>index.php#about">Présentation</a></li>
-			  <li><a href="<?php echo $domain; ?>index.php#services">Caractéristiques</a></li>
 			  <li><a href="<?php echo $domain; ?>index.php#portfolio">Portfolio</a></li>
 			  <li><a href="<?php echo $domain; ?>index.php#team">Team</a></li>
 			<li><a href="<?php echo $domain; ?>index.php#contact">Contact</a></li>
@@ -46,7 +45,7 @@ header ('Location: ../');
 				
 				<?php }?>
 				<a class="dropdown-item" href="<?php echo $domain; ?>recrutement">Nous rejoindre</a>
-				<a type="button" class="dropdown-item" data-toggle="modal" data-target="#FAQ">Foire aux questions</a>
+				<a class="dropdown-item" href ="#" data-toggle="modal" data-target="#FAQ">Foire aux questions</a>
 				<hr>
 				<a class="dropdown-item" href="?action=logout">Déconnexion</a>
 				</div></div>'

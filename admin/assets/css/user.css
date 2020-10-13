@@ -1,8 +1,16 @@
-	@media (max-width: 768px) {
+	@media (max-width: 700px) {
 	.modal {
 	max-width:350px;
 	}
 	}
+		.col-md-70 {
+	 position:relative;
+	width:100%;
+	padding-right:15px;
+	padding-left:15px
+	}
+	
+	
 	.switch {
 	  display: inline-block;
 	  height: 24px;

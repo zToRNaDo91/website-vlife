@@ -31,7 +31,6 @@ require ('inc/discord.php');
 			  <li class="active"><a href="index.php">Accueil</a></li>
 			  <li><a href="partenaire.php">Partenaire</a></li>
 			  <li><a href="#about">Présentation</a></li>
-			  <li><a href="#services">Caractéristiques</a></li>
 			  <li><a href="#portfolio">Portfolio</a></li>
 			  <li><a href="#team">Team</a></li>
 			 <!--<li class="drop-down"><a href="">Drop Down</a>
@@ -78,7 +77,7 @@ require ('inc/discord.php');
 				<a class="dropdown-item" href="admin">Panel Staff</a>
 				<?php }?>
 				<a class="dropdown-item" href="recrutement">Nous rejoindre</a>
-				<a type="button" class="dropdown-item" data-toggle="modal" data-target="#FAQ">Foire aux questions</a>
+				<a class="dropdown-item" href ="#" data-toggle="modal" data-target="#FAQ">Foire aux questions</a>
 				<hr>
 				<a class="dropdown-item" href="?action=logout">Déconnexion</a>
 				</div></div>'

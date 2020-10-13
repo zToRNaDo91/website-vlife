@@ -60,7 +60,7 @@ if ($admin) {
                    
 					<div class="row">
 					 
-                        <div class="col-md-6">
+                        <div class="col-md-70">
                             <div class="card">
 							<div style="display:inline-block">
 					
@@ -113,9 +113,9 @@ if ($admin) {
 												<button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-link"  data-toggle="modal" data-target="#UpdateData" data-id = "<?php echo $ligne['numero']?>" data-discord ="<?php echo $ligne['discord_id']; ?>" data-whatever="<?php echo $ligne['nom'];?>" data-original-title="Editer">
 													<i class="fa fa-edit"></i>
                                                 </button>
-                                                <a type="button" rel="tooltip" title="" href="inc/delete_staff.php?id=<?php echo $ligne['numero']?>"  onclick="return confirm('Êtes vous sûr de vouloir supprimer ce staff ?')" class="btn btn-danger btn-simple btn-link" data-original-title="Supprimer">
+                                                <button type="button" rel="tooltip" title="" href="inc/delete_staff.php?id=<?php echo $ligne['numero']?>"  onclick="return confirm('Êtes vous sûr de vouloir supprimer ce staff ?')" class="btn btn-danger btn-simple btn-link" data-original-title="Supprimer">
                                                     <i class="fa fa-times"></i>
-                                                </a>
+                                                </button>
 												</td>
                                             </tr>
                                        

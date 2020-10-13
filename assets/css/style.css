@@ -286,6 +286,13 @@ margin-right: 100px;
   }
 }
 
+@media (max-width: 768px) {
+  .get-started-btn {
+    margin: 0 48px 0 0;
+  }
+}
+
+
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
