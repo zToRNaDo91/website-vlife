@@ -433,12 +433,13 @@ Si vous estimez, après nous avoir contactés, que vos droits « Informatique et
 			  // Increase or decrease the current tab by 1:
 			  currentTab = currentTab + n;
 			  // if you have reached the end of the form...
-			  if (currentTab >= x.length) {
+			  if (currentTab >= x.length && document.getElementById("nextBtn").innerHTML == "Envoyer") {
 				// ... the form gets submitted:
 				document.getElementById("contactForm").submit();
 				return false;
 			  }
 			  // Otherwise, display the correct tab:
+			  event.preventDefault();
 			  showTab(currentTab);
 			}
 
@@ -586,6 +587,7 @@ return $result;
 				$numero = 1;
 				}else {
 				$numero = $row1['numero'];
+				$numero = $numero + 1;
 				}
 				$requete2='INSERT INTO recruteur (`number`, `traitement`, `numero2`,`date_recrutoral`) VALUES(NULL,"Machine", "'.$numero.'", CURRENT_TIMESTAMP())';
 				 $result2 = $mysqli->query($requete2);
