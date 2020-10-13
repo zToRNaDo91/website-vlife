@@ -42,13 +42,13 @@ function myFunction() {
 				if ($oral == '') {
 				echo '<div class="entretien">Vous avez désormais un entretien oral à passer. <br>';
 				
-				echo 'Avant toute chose, merci de lire ces <button type="button" href="#" data-toggle="modal" data-target="#information" class="btn btn-info btn-fill copy"> informations</button></div>';
+				echo 'Avant toute chose, cliquer sur ce bouton : <button type="button" href="#" data-toggle="modal" data-target="#information" class="btn btn-info btn-fill copy"> informations</button></div>';
 				echo '<p align=center>Le STAFF vLife.</p>';
 				}
 				if ($oral == 'Accepter')
 				{
 				echo '<hr>';
-				echo "<br><br><center>Félicitations ! Vous avez également été <f style='color:green'>accepté</f> à l'oral. <br> Veuillez contacter le recruteur chargé de votre dossier, $recrutoral via Discord.<br> ";
+				echo "<br><br><center>Félicitations ! Vous avez également été <f style='color:green'>accepté</f> à l'oral. <br> Si vous n'avez pas reçu l'ensemble des informations ou rôles, veuillez contacter le recruteur chargé de votre dossier, $recrutoral via Discord.<br> ";
 				echo 'Le STAFF vLife.</center>';
 				} 
 				
@@ -106,10 +106,7 @@ function myFunction() {
 **Disponibilité** : *Veuillez remplacer par vos disponibilités*</textarea><br><small>*Le bouton sert à copier le format.</small>'; ?>
 							 <br>
 							
-							</label>
-						</div>
-						
-						<div class="modal-footer"> 
+						<hr>
 							 <p align="left">
 							Après quoi;<br>
 							Vous devez <b>prendre un rendez-vous</b> avec le recruteur charger du corps de métier 
@@ -124,6 +121,9 @@ function myFunction() {
 							Vous serez contacter sous un délai de 48h pour votre rendez-vous. <br>
 							Vous aurez votre réponse d'entretien oral sous un délai de 24h.
 							 </p>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
 						</div>
 						
 					</div>
