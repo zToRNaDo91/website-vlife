@@ -508,7 +508,7 @@
 				  <div class="pic"><img src="assets/img/team/team-3.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
 					<h4 class="ptech">Guillaume Shepe</h4>				
-					<span>Développeur | Développeur logiciel</span>
+					<span>Lead Pôle Technique</span>
 					<p>Développeur et modélisateur au sein de notre serveur. C'est l'un des couteaux suisses de vLife.</p>
 				  </div>
 				</div>
