@@ -9,8 +9,13 @@
 	padding-right:15px;
 	padding-left:15px
 	}
-	
-	
+	@media (min-width: 768px) {
+	.col-md-70 {
+	  -ms-flex:0 0 50%;
+ 	  flex:0 0 50%;
+  	  max-width:100%;
+	}
+	}
 	.switch {
 	  display: inline-block;
 	  height: 24px;
