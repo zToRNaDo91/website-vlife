@@ -16,8 +16,8 @@ a.btn:hover {
      -o-transition-duration: 0.5s;
  }
 
-.long {
-width: 150px;
+.table-responsive {
+white-space: nowrap;
 }
 
 .panel-header {

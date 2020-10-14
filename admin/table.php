@@ -62,25 +62,29 @@ include '../inc/connect.php';
 		$count = mysqli_query($mysqli, 'SELECT discord, count(*) as duplicate
 		FROM info
 		GROUP BY discord');
-		$requete = mysqli_query($mysqli, 'SELECT numero,discord, poste, username, email, age, category.name, date
+		$requete = mysqli_query($mysqli, 'SELECT numero,discord, poste, username, email, age, category.name, date, recruteur.numero2, oral
 		FROM info
-		LEFT JOIN category ON info.category_id=category.id
+		LEFT JOIN category ON info.category_id=category.id 
+		LEFT JOIN recruteur ON info.numero=numero2
 		WHERE category_id=category.id
 		ORDER BY numero DESC');
-		$requete1 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date
+		$requete1 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date, recruteur.numero2, oral
 		FROM info
 		LEFT JOIN category ON info.category_id=category.id
+		LEFT JOIN recruteur ON info.numero=numero2
 		WHERE category.name="En Attente"
 		ORDER BY numero DESC');
-		$requete2 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date
+		$requete2 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date, recruteur.numero2, oral
 		FROM info
 		LEFT JOIN category ON info.category_id=category.id
+		LEFT JOIN recruteur ON info.numero=numero2
 		WHERE category.name="Accepter" 
 		ORDER BY numero DESC');
-		$requete3 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date
+		$requete3 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date, recruteur.numero2, oral
 		FROM info
 		LEFT JOIN category ON info.category_id=category.id
-		WHERE category.name="Refuser" 
+		LEFT JOIN recruteur ON info.numero=numero2
+		WHERE category.name="Refuser" or category.name="Banni" 
 		ORDER BY numero DESC');
 		$nb = mysqli_num_rows($requete);
 		$nb1 = mysqli_num_rows($requete1);
@@ -95,19 +99,11 @@ include '../inc/connect.php';
 
 		<div class="panel-header">
 		<ul class="nav nav-tabs faq-cat-tabs">
-                <li class="active"><a href="#1" data-toggle="tab" class="moving-tab" onclick="showt(1), hidet(2); hidet(4); hidet(3)">Tout Afficher <span class="badge"><?php echo $nb; ?></span></a></li>
+                <li><a href="#1" data-toggle="tab" class="moving-tab" onclick="showt(1), hidet(2); hidet(4); hidet(3)">Tout Afficher <span class="badge"><?php echo $nb; ?></span></a></li>
                 <li><a href="#2" data-toggle="tab" class="moving-tab" onclick="showt(2); hidet(1); hidet(4); hidet(3)">En Attente <span class="badge"><?php echo $nb1; ?></span></a></li>
 				<li><a href="#3" data-toggle="tab" class="moving-tab" onclick="showt(3); hidet(1); hidet(4); hidet(2);">Accepter <span class="badge"><?php echo $nb2; ?></span></a></li>
                 <li><a href="#4" data-toggle="tab" class="moving-tab" onclick="showt(4); hidet(1); hidet(3); hidet(2);">Refuser <span class="badge"><?php echo $nb3; ?></span></a></li>
-            </ul>
-		<!--<input type="button" name="Tout" class="btn" value="Tout afficher" />
-		
-		<input type="button" name="genre" class="btn" value="En Attente" />
-		<input type="button" name="accept" class="btn" value="Accepter" />
-		<input type="button" name="refuser" class="btn" value="Refuser" />
-		
-		
-		 <a href="category.php?<? //$category?>">Test</a> -->
+        </ul>
 		</div>
 		 <div class="tab-pane active in" aria-expanded="true" id="1" style="display:block">
 		<div class = "table-responsive">
@@ -115,12 +111,13 @@ include '../inc/connect.php';
 				<thead>
 				<tr>
 					<th>#</th>
-                    <th >Poste</th>
-                    <th>Discord_ID</th>
+                    <th>Poste</th>
+                    <th>SteamID64</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
 					<th>Status</th>
+					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
                 </tr>
@@ -136,7 +133,11 @@ include '../inc/connect.php';
 				?>
 				
 				<tr>
-                    
+                    <?php $oral = $ligne['oral'];
+					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
+					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
+					else {$oral = '<small><i>N/A</i></small>';}
+					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
                     <th><?php echo $ligne['discord'];?></th>
@@ -144,6 +145,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
 					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>
         <span><strong>Gérer</strong></span></a>
@@ -165,12 +167,13 @@ include '../inc/connect.php';
 				<thead>
 				<tr>
 					<th>#</th>
-                    <th>Poste</th>
-                    <th>Discord_ID</th>
+                    <th >Poste</th>
+                    <th>SteamID64</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
 					<th>Status</th>
+					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
                 </tr>
@@ -182,7 +185,11 @@ include '../inc/connect.php';
 				?>
 				
 				<tr>
-                    
+                    <?php $oral = $ligne['oral'];
+					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
+					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
+					else {$oral = '<small><i>N/A</i></small>';}
+					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
                     <th><?php echo $ligne['discord'];?></th>
@@ -190,6 +197,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
 					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>
         <span><strong>Gérer</strong></span></a>
@@ -208,14 +216,15 @@ include '../inc/connect.php';
 		<div class = "table-responsive">
 		<table class="example table table-hover">
 				<thead>
-				<tr class="text-center">
+				<tr>
 					<th>#</th>
-                    <th>Poste</th>
-                    <th>Discord_ID</th>
+                    <th >Poste</th>
+                    <th>SteamID64</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
 					<th>Status</th>
+					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
                 </tr>
@@ -227,7 +236,11 @@ include '../inc/connect.php';
 				?>
 				
 				<tr>
-                    
+					<?php $oral = $ligne['oral'];
+					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
+					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
+					else {$oral = '<small><i>N/A</i></small>';}
+					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
                     <th><?php echo $ligne['discord'];?></th>
@@ -235,6 +248,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
 					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>
         <span><strong>Gérer</strong></span></a>
@@ -249,18 +263,20 @@ include '../inc/connect.php';
 		?>
 			</table>
 		</div>
-		</div>	 <div class="tab-pane fade" id="4" style="display:none">
+			</div> 
+		<div class="tab-pane fade" id="4" style="display:none">
 		<div class = "table-responsive">
 		<table class="example table table-hover">
 				<thead>
 				<tr>
 					<th>#</th>
-                    <th>Poste</th>
-                    <th>Discord_ID</th>
+                    <th >Poste</th>
+                    <th>SteamID64</th>
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
 					<th>Status</th>
+					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
                 </tr>
@@ -272,7 +288,11 @@ include '../inc/connect.php';
 				?>
 				
 				<tr>
-                    
+                    <?php $oral = $ligne['oral'];
+					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
+					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
+					else {$oral = '<small><i>N/A</i></small>';}
+					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
                     <th><?php echo $ligne['discord'];?></th>
@@ -280,6 +300,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
 					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>
         <span><strong>Gérer</strong></span></a>

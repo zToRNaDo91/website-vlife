@@ -94,7 +94,7 @@ require '../inc/connect.php';
 		$requete3 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date
 		FROM info
 		LEFT JOIN category ON info.category_id=category.id
-		WHERE category.name="Refuser" 
+		WHERE category.name="Refuser" or category.name="Banni"
 		ORDER BY numero DESC');
 		$nb = mysqli_num_rows($requete);
 		$nb2 = mysqli_num_rows($requete2);

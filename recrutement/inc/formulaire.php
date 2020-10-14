@@ -71,7 +71,7 @@ header ('Location: ../');
 				Nous ne traiterons aucune demande concernant les demandes de recrutement staff.<br>
 				<br>
 				ℹ | À la suite de votre candidature, <b>vous serez recontacté sur DISCORD, par message privé, sous 48h maximum</b>, si aucune réponse ne vous est formulée, merci de recontacter les ressources humaines via les salons disponibles prévus à cet effet.<br>
-				Pour toutes informations supplémentaires, veuillez vous référer au <a class="faq-button"type="button" data-toggle="modal" data-target="#FAQ">FAQ</a>. 
+				Pour toutes informations supplémentaires, veuillez vous référer au <a class="faq-button" data-toggle="modal" data-target="#FAQ">FAQ</a>. 
 				</p>
 				 </div>
 
@@ -255,15 +255,13 @@ header ('Location: ../');
 					  <label class="custom-control-label" for="metier2">Non</label>
 					 </div>					
 				</div>
-				
 				<div class="form-group" id ="1" style="display:none;">
-					  <label for="met"> Quel métier, et depuis combien de temps ? <span style='color:red'>*</span></label>
-					  <input type="text" name="met" class="form-control" id="2" maxlength="100">
+					   <label for="2"> Quel métier, et depuis combien de temps ? <span style='color:red'>*</span></label>
+					  <textarea name="met" class="form-control" minlength="30" id="2" maxlength="414" rows="3"/></textarea>
 					  <div class="invalid-feedback">
-						  Merci de remplir cette partie.
+						  Merci de mettre minimum 30 caractères. 
 						</div>
-					 
-				</div>				
+				</div>
 				 
 				 </div>
 				 
