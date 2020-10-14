@@ -14,7 +14,11 @@
 		.faq-button{
 		border: 2px solid #47b2e48c;
 		border-radius:50px;
+		color: white;
 		}
+ 		.faq-button:hover{
+  		color:aliceblue;
+  		}
 		
 		.tab {
 		  display: none;

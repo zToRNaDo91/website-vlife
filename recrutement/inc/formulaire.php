@@ -71,7 +71,7 @@ header ('Location: ../');
 				Nous ne traiterons aucune demande concernant les demandes de recrutement staff.<br>
 				<br>
 				ℹ | À la suite de votre candidature, <b>vous serez recontacté sur DISCORD, par message privé, sous 48h maximum</b>, si aucune réponse ne vous est formulée, merci de recontacter les ressources humaines via les salons disponibles prévus à cet effet.<br>
-				Pour toutes informations supplémentaires, veuillez vous référer au <a class="faq-button" data-toggle="modal" data-target="#FAQ">FAQ</a>. 
+				Pour toutes informations supplémentaires, veuillez vous référer au <button type="button" class="btn faq-button" data-toggle="modal" data-target="#FAQ">FAQ</button>
 				</p>
 				 </div>
 
