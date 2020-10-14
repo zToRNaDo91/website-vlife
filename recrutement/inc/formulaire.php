@@ -71,7 +71,7 @@ header ('Location: ../');
 				Nous ne traiterons aucune demande concernant les demandes de recrutement staff.<br>
 				<br>
 				ℹ | À la suite de votre candidature, <b>vous serez recontacté sur DISCORD, par message privé, sous 48h maximum</b>, si aucune réponse ne vous est formulée, merci de recontacter les ressources humaines via les salons disponibles prévus à cet effet.<br>
-				Pour toutes informations supplémentaires, veuillez vous référer au <button type="button" class="btn faq-button" data-toggle="modal" data-target="#FAQ">FAQ</button>
+				Pour toutes informations supplémentaires, veuillez vous référer au <button type="button" class="btn faq-button" data-toggle="modal" data-target="#FAQ">FAQ</button> 
 				</p>
 				 </div>
 
@@ -224,14 +224,14 @@ header ('Location: ../');
 				</div>
 				<div class="form-group">
 					  <label for="XP">Votre expérience en RP (le jeu + nom du serveur + rang + plateforme) <span style='color:red'>*</span></label>
-					  <textarea name="XP" class="form-control" id="XP" minlength="30" maxlength="414" required rows="3"/></textarea>
+					  <textarea name="XP" class="form-control" id="XP" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
 				</div>
 				<div class="form-group">
 					  <label for="RP">Les gameplay que vous avez joué (+ exemple de scène RP) <span style='color:red'>*</span></label>
-					  <textarea name="RP" class="form-control" id="RP" minlength="30" maxlength="414" required rows="3"/></textarea>
+					  <textarea name="RP" class="form-control" id="RP" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
@@ -255,13 +255,14 @@ header ('Location: ../');
 					  <label class="custom-control-label" for="metier2">Non</label>
 					 </div>					
 				</div>
+				
 				<div class="form-group" id ="1" style="display:none;">
 					   <label for="2"> Quel métier, et depuis combien de temps ? <span style='color:red'>*</span></label>
 					  <textarea name="met" class="form-control" minlength="30" id="2" maxlength="414" rows="3"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
-				</div>
+				</div>			
 				 
 				 </div>
 				 
@@ -270,14 +271,14 @@ header ('Location: ../');
 				  
 				<div class="form-group">
 					  <label for="motive">Présentez votre motivation pour nous rejoindre <span style='color:red'>*</span></label>
-					  <textarea name="motive" class="form-control" id="motive" minlength="30" maxlength="414" required rows="3"/></textarea>
+					  <textarea name="motive" class="form-control" id="motive" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
 				</div>
 				<div class="form-group">
 					  <label for="scenario">Inventez une intervention/scénario quotidienne/commune roleplay que vous pourrez réaliser en tant que civil pour les secours <span style='color:red'>*</span></label>
-					  <textarea name="scenario" class="form-control" id="scenario" minlength="30" maxlength="414" required rows="3"/></textarea>
+					  <textarea name="scenario" class="form-control" id="scenario" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
@@ -370,6 +371,20 @@ Si vous estimez, après nous avoir contactés, que vos droits « Informatique et
 				}
 			?>
 			<script>
+			
+			$(document).ready(function () {
+			  $('textarea[data-limit-rows=true]')
+				.on('keypress', function (event) {
+					var textarea = $(this),
+						text = textarea.val(),
+						numberOfLines = (text.match(/\n/g) || []).length + 1,
+						maxRows = parseInt(textarea.attr('rows'));
+			 
+					if (event.which === 13 && numberOfLines === maxRows ) {
+					  return false;
+					}
+				});
+			});
 			window.onbeforeunload = function(){
 			return 'Are you sure you want to leave?';
 			};
