@@ -1,5 +1,5 @@
 
-<title>Connexion Recruteur</title>
+<title>Connexion Staff</title>
 	 <!-- Favicons -->
 	<link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="../assets/img/favicon/favicon.png" type="image/png">
