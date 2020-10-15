@@ -226,7 +226,7 @@ if ($admin or $recruteur) {
 	if (!empty ($autre)) {
 	$autre = str_replace ('"', '', $autre);
 	echo '<br><div readonly class="form-control-plaintext data">'.$autre.'</div><br><br>';
-	}else{ echo '<br> N/A <br><br>';}
+	}else{ echo '<br> <i>N/A</i> <br><br>';}
 	
 	$validation = $row['validation'];
 	if (!empty ($autre)) {
