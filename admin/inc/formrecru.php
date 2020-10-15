@@ -70,7 +70,12 @@ header ('Location: ../');
 					Merci de sélectionner une raison.
 					</div>	
 				</div>
-				
+			<div class="form-group">
+			<label> Commentaire : </label><br><textarea class="form-control"  name = "comment" ></textarea>
+			 <div class="invalid-feedback">
+			Merci d'écrire un commentaire.
+		  </div>
+			</div>	
 			<input type = "hidden" value = "qs" name ="req">
 			<!--<input type="radio" value = "time" name="choice"><label>Supprimer temps d'attente</label><br><br>-->
             <input type="submit" class="btn btn-info btn-fill" name="submit" value="Valider" >

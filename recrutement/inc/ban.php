@@ -28,7 +28,6 @@ header ('Location: ../');
 				if ($duplicate != 2) {
 				echo "vous avez été <f style='color:red'>banni</f> du recrutement ! <br>";
 				}
-				//if (!empty($raison))
 				if (!empty($raison)) {
 				if ($duplicate != 2){
 				echo 'Pour la raison suivante : ', $raison, '<br>';
@@ -41,8 +40,13 @@ header ('Location: ../');
 				echo 'Vous avez été refuser pour la deuxième fois. Raison du deuxième refus : ', $raison, '<br> 
 				En conséquence de quoi cela constitue un refus définitif ! <br>';}
 				}
-				if (!empty($raison2 and $duplicate ==2)) {
-				echo "Vous avez été refusé à l'oral pour la raison suivante : ", $raison2, "<br> Ce refus à l'oral étant sur votre deuxième candidature, cela constitue un refus définitif ! <br>";
+				if (!empty($raison2)) {
+				if ($duplicate == 1) {
+				echo "Vous avez été refusé définitement à votre premier entretien oral pour la raison suivante : ", $raison2, "<br>";
+				}else {
+				echo "Vous avez été refusé à l'oral pour la raison suivante : ", $raison2, "<br>";
+				echo "Ce refus à l'oral étant sur votre deuxième candidature, cela constitue un refus définitif ! <br>";
+				}
 				}
 				echo '<br>Pour toute demande, veuillez vous munir de ces informations :<br>';
 				echo 'Votre DiscordID : ', $user->id, '<br>';

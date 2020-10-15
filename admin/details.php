@@ -63,7 +63,7 @@ if ($admin or $recruteur) {
    LEFT JOIN category ON info.category_id=category.id 
    WHERE numero = '".$_GET['number']."' AND category_id=category.id 
    ORDER BY `numero` DESC"); // Selectionner un par un les données. 
-   $result2 = mysqli_query($mysqli," SELECT number, date_traitement,traitement,numero2,admin, recrutoral, raison_oral, date_recrutoral, oral, commentaire from info LEFT JOIN recruteur ON info.numero= recruteur.numero2 WHERE numero = '".$_GET['number']."'");
+   $result2 = mysqli_query($mysqli," SELECT number, date_traitement,traitement,numero2,admin, recrutoral, raison_oral, date_recrutoral, oral,comment, commentaire from info LEFT JOIN recruteur ON info.numero= recruteur.numero2 WHERE numero = '".$_GET['number']."'");
 	$count = mysqli_query($mysqli, "SELECT discord, count(*) as duplicate
 		FROM info WHERE discord = '".$_GET['discord']."'
 		GROUP BY discord
@@ -247,6 +247,10 @@ if ($admin or $recruteur) {
 			if ($row['raison'] != '' and $row['category_id'] != 2) {
 			echo 'Raison: '.$row['raison'].'<br>';
 			}
+			if ($row3['comment'] != '') {
+				$comment = $row3['comment'];
+				echo 'Commentaire :<br> <div  readonly class="data" >'.$comment.'</div>';
+			}
 		}
 		if ($row3['admin'] != '') {
 			echo '<br>Modifier par Admin '.$row3['admin'].' <br>';
@@ -268,7 +272,8 @@ if ($admin or $recruteur) {
 		if ($admin) {
 		
 		include 'inc/formadmin.php';
-		if ($row['category_id'] == '2') {
+		if ($row['category_id'] == '2' and $row3['commentaire'] == '') {
+		include 'inc/formoral.php';
 		}
 			if ($row['category_id'] == '2' and $row3['commentaire'] != '') { ?>
 		<form method="post" style="margin-top:100px;" class="needs-validation" novalidate>
@@ -342,31 +347,30 @@ if ($admin or $recruteur) {
 	$id_candid = $row['numero'];
 	$role = $row['poste'];
 	
-	/*
-	var sel1 = $('#sel1').val();
-	var sel2 = $('#sel2').val();
-	*/
 	$duplicate = $row2['duplicate'];
 			if (isset($_POST['submit2'])) {
 			require '../inc/connect.php';
+			if ($_POST['oral'] == 'ban')
+			{
+			$oral = 'Refuser';
+			} else {
 			$oral = $_POST['oral'];
+			}
 			$commentaire = $mysqli->real_escape_string($_POST['commentaire']);
+			if ($_POST['oral'] =='ban') {
+			$raisonoral = $mysqli->real_escape_string($_POST['raison2']);
+			} else {
 			$raisonoral = $mysqli->real_escape_string($_POST['raisonoral']);
+			}
 			$sql4 = " UPDATE recruteur SET oral='$oral', commentaire= '$commentaire', recrutoral = '$discordname', raison_oral ='$raisonoral' ,date_recrutoral =CURRENT_TIMESTAMP()  WHERE recruteur.numero2=".$row['numero']." ";
-			if ( $_POST['oral']== 'Refuser' and $duplicate ==2) {
+			if (($_POST['oral']== 'Refuser' and $duplicate ==2) or ($_POST['oral']=='ban')) {
 			 $sql5 = ' UPDATE info SET category_id=4 WHERE numero='.$row['numero'].' ';	
 			if (mysqli_query($mysqli, $sql5)) {
-				/* $url = "https://rytrak.fr/api/cic93/".$id_user."";
-				$data = call_data($url);*/
-				# Envoie par discord ou par mail
-				//if ($data) {
                     echo '<script language="Javascript">
 					<!--
 					document.location.replace("details.php?discord='.$_GET['discord'].'&number='.$_GET['number'].'");
 					// -->
 					</script>';
-                //}
-			// echo "Record5 oral successfully";
 			   } else {
 				  echo "Error updating record: " . mysqli_error($mysqli);
 			   }
@@ -434,9 +438,9 @@ if ($admin or $recruteur) {
 				}
 			   $sql = ' UPDATE info SET category_id='.$category.' WHERE numero='.$row['numero'].' ';
 			  $sql2 = " UPDATE info SET raison= '$raison'  WHERE numero=".$row['numero']." ";
-			  
+			  $comment = $mysqli->real_escape_string($_POST['comment']);
 			  if (isset($_POST['req']) or isset($_POST['add']) and ($recruteur) ){
-			  $requete='INSERT INTO recruteur (`number`, `traitement`, `numero2`) VALUES(NULL,"'.$discordname.'","'.$row['numero'].'")'; // Ajouter également steamid
+			  $requete='INSERT INTO recruteur (`number`, `traitement`, `numero2`, `comment`) VALUES(NULL,"'.$discordname.'","'.$row['numero'].'", "'.$comment.'")'; // Ajouter également steamid
 			  if (mysqli_query($mysqli, $requete)) {
 				 if ($category == 2) {
 				 if ($role == 'Opérateur 15' or $role == 'Opérateur 18' or $role =='Opérateur 17') {

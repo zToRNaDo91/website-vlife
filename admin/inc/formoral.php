@@ -6,16 +6,26 @@ header ('Location: ../');
 ?>
 		<script>
 		$(window).on('load', function() {
-		var r = $(".refa"); 
+		var r = $(".refas"); 
+		var v = $(".vies"); 
 		$('input[type="radio"]').click(function(){
-		if($(this).attr("id")=="refus"){
+		if($(this).attr("id")=="refuse"){
 		r.show('slow');
 		r.attr("required", "");
       } else {
 		r.hide('slow');
 		r.removeAttr("required", "");
 	  }
+	   if($(this).attr("id")=="bane"){
+		v.show('slow');
+		v.attr("required", "");
+      } else {
+		v.hide('slow');
+		v.removeAttr("required", "");
+	  }
+		
 		});
+	  
 		
 });
 
@@ -33,19 +43,35 @@ header ('Location: ../');
 		<label class="custom-control-label" for="accepter" class="custom-control-input"> Accepter</label>
 		</div>
 		<div class="custom-control custom-radio">
-		<input type="radio" id="refus" value = "Refuser" name="oral" class="custom-control-input"> 
+		<input type="radio" id="refuse" value = "Refuser" name="oral" class="custom-control-input"> 
 		
-		<label class="custom-control-label" for="refus"> Refuser</label><br> 
-		<div class="invalid-feedback" style="width:250px;">
-    Merci de cochez une case
-  </div>
+		<label class="custom-control-label" for="refuse"> Refuser</label><br> 
 		</div>
 		
 
-		<input type="text" class="form-control refa"  name="raisonoral" style="width:150px;height:30px;margin-left: 90px;margin-top: -30px; display:none;"> 
+		<input type="text" class="form-control refas"  name="raisonoral" style="width:150px;height:30px;margin-left: 90px;margin-top: -30px; display:none;"> 
 		 <div class="invalid-feedback">
        Merci d'ajouter une raison. 
 		</div>
+			<div class="custom-control custom-radio">
+				<input type="radio" id="bane" name="oral" value="ban" class="custom-control-input bannir">
+				<label class="custom-control-label" for="bane">Refuser à vie</label>
+				<div class="invalid-feedback">
+					Merci de cocher une case.
+					</div>	
+			</div>
+				<div>
+				<select class ="vies custom-select" style="display:none;" name="raison2">
+                <option value="" selected>Selection..</option>
+				<option value="Tricherie (copie de candidature)">Triche (Copie de candidature)</option>
+                <option  value="Tricherie">Tricherie</option>
+				<option  value="Manque de respect total pour le lecteur">Manque de respect total pour le lecteur</option>
+				<option value="Mensonge et incohérence sur la candidature">Mensonge et incohérence sur la candidature</option>
+				</select>
+				<div class="invalid-feedback">
+					Merci de sélectionner une raison.
+					</div>	
+				</div>
 		<div class="form-group">
 		<label> Commentaire : </label><br><textarea class="form-control"  name = "commentaire" required ></textarea>
 		 <div class="invalid-feedback">
