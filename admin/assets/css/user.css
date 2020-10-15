@@ -3,6 +3,9 @@
 	max-width:350px;
 	}
 	}
+	.table-responsive {
+	white-space: nowrap;
+	}
 		.col-md-70 {
 	 position:relative;
 	width:100%;

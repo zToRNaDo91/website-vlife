@@ -49,7 +49,13 @@ if ($admin or $recruteur) {
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
-
+    	<style>
+	#textBox #sourceText {
+  	white-space: normal;
+	}
+	</style>
+	
+	
 </head>
 
 <body  onload="initDoc();">
