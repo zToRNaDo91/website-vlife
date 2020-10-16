@@ -109,7 +109,7 @@
 			  </div>
 
 			  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-				<a href ="partenaire.php">
+				<a href ="https://zello.com/" target="_blank">
 				<img  src="assets/img/clients/client-6.png" class="img-fluid" alt="">
 				</a>
 			  </div>
@@ -300,8 +300,8 @@
 			  <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
 				<div class="icon-box">
 				  <div class="icon"><i class="bx bx-tachometer"></i></div>
-				  <h4><a target="_blank" href="https://cosmhost.com/index.php">Performance</a></h4>
-				  <p>Nous avons un serveur performant, hébergé par CosmHost. </p>
+				  <h4><a href="#services">Performance</a></h4>
+				  <p>Nous avons un serveur performant, compléter par un système de ticket. </p>
 				</div>
 			  </div>
 
@@ -547,7 +547,7 @@
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
 				  <div class="pic"><img src="assets/img/team/team-6.jpg" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="staff">Valentin. M</h4>
+					<h4 class="ptech">Valentin. M</h4>
 					<span>Moddeur</span>
 					<p>Offre son savoir-faire pour donner une longévité au serveur. Administrateur ComMods</p>
 					<div class="social">

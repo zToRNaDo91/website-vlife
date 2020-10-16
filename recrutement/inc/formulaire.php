@@ -292,7 +292,7 @@ header ('Location: ../');
 				</div>
 				  <div class="custom-control custom-checkbox mb-3">
 					<input type="checkbox" name ='validation' class="custom-control-input" id="validation" value="valide" required>
-					<label class="custom-control-label" for="validation">Je confirme avoir 15 ans ou plus et j'accepte les 
+					<label class="custom-control-label" for="validation"> En cliquant sur ce bouton,vous confirmez avoir 15 ans ou plus et vous acceptez les 
 					<button type="button" class="btn btn-info" data-toggle="modal" data-target="#Conditions">conditions</button></label>
 					<div class="invalid-feedback">Merci de cocher.</div>
 				  </div>

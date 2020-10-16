@@ -79,21 +79,6 @@
 
     <section class="inner-page" id="partenaire">
       <div class="container" data-aos="fade-up">
-		<img src="assets/img/cosmhost.png" alt="CosmHost"  width="300"><br><br>
-	   <p>
-         Notre partenaire CosmHost propose un service d'hébergement web, de serveur de jeux et plus encore, à prix réduit.<br>
-		 Ils ont su nous accompagner tout au long de notre projet via leur assistance personnelle et efficace.<br>
-		 Encadrés par une équipe de plusieurs professionnels, ils permettent un suivi 24h/7j.<br>
-		 Ils proposent également l'ajout de nom de domaine, un panel de gestion simplifiée et bien plus.<br>
-		 Ils comptent notamment parmi leurs prestataires "online" et de nombreuses communautés.
-		 <br>
-        </p>
-		<div class="social">
-					  <a href="https://twitter.com/CosmHost" target="_blank"><i class="ri-twitter-fill"></i></a>
-					  <a href="https://discord.gg/GzCKQ6T" target="_blank"><i class="ri-discord-fill"></i></a>
-					  <a href ="https://cosmhost.com/index.php" target="_blank"><i class="bx bx-link"></i></a>
-					</div>
-		<hr>
 		<img src="assets/img/commods.png" alt="ComMods" ><br><br>
 		<p>ComMods est une communauté de modding, ayant pour but de partager leurs savoir-faire et mods. <br>
 		Elle est remplie de passionnés, formateurs et élèves. Ils sont d'ailleurs toujours à la recherche de passionnés désirant apprendre.<br>
@@ -102,9 +87,6 @@
 		Notamment en nous offrant de nombreuses exclusivités, que vous retrouverez sur le serveur en nous rejoignant.
 		
 		</p>
-		<!--<a href="https://www.commods.fr"  class="details-link" title="ComMods Site Web">
-		<i class="bx bx-link"></i>
-		</a>-->
 			<div class="social">
 					  <a href="https://twitter.com/CommodsOfficiel" target="_blank"><i class="ri-twitter-fill"></i></a>
 					  <a href="https://www.youtube.com/channel/UC8VlMFvdfb-0MsH_oazxAQg" target="_blank"><i class="ri-youtube-fill"></i></a>
