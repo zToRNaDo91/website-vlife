@@ -9,36 +9,36 @@
 			<meta content="" name="description">
 			<meta content="" name="keywords">
 			<!-- Favicons -->
-			<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-			<link rel="icon" href="assets/img/favicon/favicon.png" type="image/png">
-			<link rel="icon" sizes="32x32" href="assets/img/favicon/favicon-32.png" type="image/png">
-			<link rel="icon" sizes="64x64" href="assets/img/favicon/favicon-64.png" type="image/png">
-			<link rel="icon" sizes="96x96" href="assets/img/favicon/favicon-96.png" type="image/png">
-			<link rel="icon" sizes="196x196" href="assets/img/favicon/favicon-196.png" type="image/png">
-			<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-touch-icon.png">
-			<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png">
-			<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-touch-icon-76x76.png">
-			<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png">
-			<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png">
-			<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png">
-			<meta name="msapplication-TileImage" content="assets/img/favicon/favicon-144.png">
+			<link rel="shortcut icon" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/favicon.ico" type="image/x-icon">
+			<link rel="icon" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/favicon.png" type="image/png">
+			<link rel="icon" sizes="32x32" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/favicon-32.png" type="image/png">
+			<link rel="icon" sizes="64x64" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/favicon-64.png" type="image/png">
+			<link rel="icon" sizes="96x96" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/favicon-96.png" type="image/png">
+			<link rel="icon" sizes="196x196" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/favicon-196.png" type="image/png">
+			<link rel="apple-touch-icon" sizes="152x152" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/apple-touch-icon.png">
+			<link rel="apple-touch-icon" sizes="60x60" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/apple-touch-icon-60x60.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/apple-touch-icon-76x76.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/apple-touch-icon-114x114.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/apple-touch-icon-120x120.png">
+			<link rel="apple-touch-icon" sizes="144x144" href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/apple-touch-icon-144x144.png">
+			<meta name="msapplication-TileImage" content="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/img/favicon/favicon-144.png">
 			<meta name="msapplication-TileColor" content="#FFFFFF">
 			
 			  <!-- Google Fonts -->
 		  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 		  <!-- Vendor CSS Files -->
-		  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-		  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-		  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-		  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-		  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/venobox/venobox.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 		  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
 		  <!-- Template Main CSS File -->
-		  <link href="assets/css/style.css" rel="stylesheet">
-		  <link href="assets/css/404.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/css/style.css" rel="stylesheet">
+		  <link href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/css/404.css" rel="stylesheet">
 		  <!-- ======= Header ======= -->
 		  
 		  <!-- =======================================================
@@ -68,7 +68,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.php">Accueil</a></li>
+          <li><a href="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>index.php">Accueil</a></li>
           <li>404</li>
         </ol>
         <h3>404 Erreur</h3>
@@ -121,18 +121,18 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/jquery/jquery.min.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/php-email-form/validate.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/venobox/venobox.min.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="<?php echo 'https://'. $_SERVER['HTTP_HOST'].'/';?>assets/js/main.js"></script>
 
 </body>
 

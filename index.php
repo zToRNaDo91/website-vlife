@@ -110,7 +110,7 @@
 
 			  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
 				<a href ="https://zello.com/" target="_blank">
-				<img  src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+				<img  src="assets/img/clients/client-8.png" class="img-fluid" alt="">
 				</a>
 			  </div>
 
@@ -575,9 +575,9 @@
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
 				  <div class="pic"><img src="assets/img/team/team-8.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="staff">AuraAngel</h4>
-					<span>Développeur web | <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Responsable Ressource Humaine">RRH</a> du serveur</span>
-					<p>Développeur web de ce site.</p>
+					<h4 class="emajor">Tydoo Bauer</h4>
+					<span>Adjoint au chef de projet</span>
+					<p>Il est responsable de l'administration technique et réseau de vLife.</p>
 					</div>
 				</div>
 			  </div>

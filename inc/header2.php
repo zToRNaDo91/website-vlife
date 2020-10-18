@@ -57,6 +57,7 @@ header ('Location: ../');
 
 		</div>
 	  </header><!-- End Header -->
+		<?php if(session('access_token')) { ?>
 	  <div class="modal fade faq" id="FAQ" tabindex="-1" role="dialog" aria-labelledby="FAQLabel" aria-hidden="false">
 				  <div class="modal-dialog" role="document">
 					<div class="modal-content">
@@ -139,6 +140,7 @@ header ('Location: ../');
 					</div>
 				  </div>
 				</div>
+				<?php }?>
 	</body>
 </html>
 
