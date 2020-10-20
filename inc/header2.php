@@ -26,10 +26,10 @@ header ('Location: ../');
 			<ul>
 			  <li><a href="<?php echo $domain; ?>">Accueil</a></li>
 			  <li><a href="<?php echo $domain; ?>partenaire.php" name="partenaire.php">Partenaire</a></li>
-			  <li><a href="<?php echo $domain; ?>index.php#about">Présentation</a></li>
-			  <li><a href="<?php echo $domain; ?>index.php#portfolio">Portfolio</a></li>
-			  <li><a href="<?php echo $domain; ?>index.php#team">Team</a></li>
-			<li><a href="<?php echo $domain; ?>index.php#contact">Contact</a></li>
+			  <li><a href="<?php echo $domain; ?>#about">Présentation</a></li>
+			  <li><a href="<?php echo $domain; ?>#portfolio">Portfolio</a></li>
+			  <li><a href="<?php echo $domain; ?>#team">Team</a></li>
+			<li><a href="<?php echo $domain; ?>#contact">Contact</a></li>
 			</ul>
 		  </nav><!-- .nav-menu -->
 			<?php 

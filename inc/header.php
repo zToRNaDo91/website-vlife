@@ -28,41 +28,14 @@ require ('inc/discord.php');
 
 		  <nav class="nav-menu d-none d-lg-block">
 			<ul>
-			  <li class="active"><a href="index.php">Accueil</a></li>
+			  <li class="active"><a href="#hero">Accueil</a></li>
 			  <li><a href="partenaire.php">Partenaire</a></li>
 			  <li><a href="#about">Présentation</a></li>
 			  <li><a href="#portfolio">Portfolio</a></li>
 			  <li><a href="#team">Team</a></li>
-			 <!--<li class="drop-down"><a href="">Drop Down</a>
-				<ul>
-				  <li><a href="#">Drop Down 1</a></li>
-				  <li class="drop-down"><a href="#">Deep Drop Down</a>
-					<ul>
-					  <li><a href="#">Deep Drop Down 1</a></li>
-					  <li><a href="#">Deep Drop Down 2</a></li>
-					  <li><a href="#">Deep Drop Down 3</a></li>
-					  <li><a href="#">Deep Drop Down 4</a></li>
-					  <li><a href="#">Deep Drop Down 5</a></li>
-					</ul>
-				  </li>
-				  <li><a href="#">Drop Down 2</a></li>
-				  <li><a href="#">Drop Down 3</a></li>
-				  <li><a href="#">Drop Down 4</a></li>
-				</ul>
-			  </li>-->
 			  <li><a href="#contact">Contact</a></li>
 			</ul>
 			</nav>
-				<!--  <div class="dropdown">
-					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Dropdown button
-					  </button>
-					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					  </div>
-					</div>-->
 		  <!-- .nav-menu -->
 			<?php 
 			

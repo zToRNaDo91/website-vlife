@@ -46,7 +46,7 @@ header ('Location: ../');
 					<h4>Liens Utiles</h4>
 					<ul>
 					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>partenaire.php">Partenaire</a></li>
-					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>index.php#about">Présentation</a></li>
+					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>#about">Présentation</a></li>
 					  <li><i class="bx bx-chevron-right"></i> <a href="<?php echo $domain; ?>mentions.php">Mentions légales</a></li>
 					</ul>
 				  </div>
