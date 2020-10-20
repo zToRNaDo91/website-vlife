@@ -47,6 +47,7 @@
 		  <link href="../assets/css/style.css" rel="stylesheet">
 		  
 		   <link href="assets/css/formulaire.css" rel="stylesheet">
+		   <link rel="stylesheet" href="../assets/css/cookiealert.css">
 		  <!-- ======= Header ======= -->
 		  
 		<script>
@@ -230,7 +231,15 @@
 	?>
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
   <div id="preloader"></div>
+  <!-- Alert Cookie -->
+	<div class="alert text-center cookiealert" role="alert">
+    <b>A ce que vous aimez les cookies?</b> &#x1F36A; Ce site utilise des cookies pour vous offrir le meilleur service. En poursuivant votre navigation, vous acceptez l’utilisation des cookies. <a href="https://www.vliferoleplay.fr/mentions.php#cookie" target="_blank">En savoir plus</a>
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+        J'accepte
+    </button>		
 
+	  <!-- Include cookiealert script -->
+	  <script src="../assets/js/cookiealert.js"></script>	
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

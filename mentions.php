@@ -38,6 +38,7 @@
 
 		  <!-- Template Main CSS File -->
 		  <link href="assets/css/style.css" rel="stylesheet">
+		  <link rel="stylesheet" href="assets/css/cookiealert.css">
 		 
 		 
 			
@@ -116,7 +117,7 @@ Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank
 <p> En tout état de cause vLife ne collecte des informations personnelles relatives à l'utilisateur que pour le besoin de certains services proposés par le site <a href="http://www.vliferoleplay.fr/">www.vliferoleplay.fr</a>. L'utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu'il procède par lui-même à leur saisie. Il est alors précisé à l'utilisateur du site <a href="http://www.vliferoleplay.fr/">www.vliferoleplay.fr</a> l’obligation ou non de fournir ces informations.</p>
 <p>Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant, en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.</p>
 <p>Aucune information personnelle de l'utilisateur du site <a href="http://www.vliferoleplay.fr/">www.vliferoleplay.fr</a> n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l'hypothèse du rachat de vLife et de ses droits permettrait la transmission des dites informations à l'éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l'utilisateur du site <a href="http://www.vliferoleplay.fr/">www.vliferoleplay.fr</a>.</p>
-<p> L’ensemble des données de notre site internet sont stockées chez notre hébergeur CosmHost. Sous la politique de confidentialité <a href="http://cosmhost.com/docs/rgpd.pdf">RGPD.pdf</a></p>
+<p id="cookie"> L’ensemble des données de notre site internet sont stockées chez notre hébergeur SoYouStart (Filiale d'OVH). Sous la politique de confidentialité <a href="https://www.ovh.com/fr/support/documents_legaux/Regles_Internes_OVH.pdf">PDF</a></p>
 <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
 <h3>8. Liens hypertextes et cookies.</h3>
 <p>Le site <a href="http://www.vliferoleplay.fr/">www.vliferoleplay.fr</a> contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation de vLife. Cependant, vLife n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait.</p>
@@ -150,7 +151,14 @@ Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank
 	?>
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
   <div id="preloader"></div>
-
+  <!-- Alert Cookie -->
+	<div class="alert text-center cookiealert" role="alert">
+    <b>A ce que vous aimez les cookies?</b> &#x1F36A; Ce site utilise des cookies pour vous offrir le meilleur service. En poursuivant votre navigation, vous acceptez l’utilisation des cookies. <a href="https://www.vliferoleplay.fr/mentions.php#cookie" target="_blank">En savoir plus</a>
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+        J'accepte
+    </button>		
+  <!-- Include cookiealert script -->
+  <script src="assets/js/cookiealert.js"></script>	
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

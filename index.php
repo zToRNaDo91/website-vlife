@@ -39,6 +39,7 @@
 
 	  <!-- Template Main CSS File -->
 	  <link href="assets/css/style.css" rel="stylesheet">
+	  <link rel="stylesheet" href="assets/css/cookiealert.css">
 	
 	</head>
 
@@ -494,6 +495,7 @@
 					<h4 class="emajor">Alexandre Dawn</h4>
 					<span>CO-CEO | Adjoint chef de projet</span>
 					<p>Il a aidé à la création du serveur vLife et participe à son évolution.</p>
+				
 				  </div>
 				</div>
 			  </div>
@@ -505,6 +507,9 @@
 					<h4 class="emajor">Tydoo Bauer</h4>
 					<span>Adjoint au chef de projet</span>
 					<p>Il est responsable de l'administration technique et réseau de vLife.</p>
+					<div class="social">
+					  <a href="https://twitter.com/tydoo34" target="_blank"><i class="ri-twitter-fill"></i></a>
+					</div>
 				  </div>
 				</div>
 			  </div>
@@ -516,6 +521,9 @@
 					<h4 class="ptech">Guillaume Shepe</h4>				
 					<span>Lead Pôle Technique</span>
 					<p>Développeur et modélisateur au sein de notre serveur. C'est l'un des couteaux suisses de vLife.</p>
+					<div class="social">
+					  <a href="https://steamcommunity.com/id/rytrak" target="_blank"><i class="ri-steam-fill"></i></a>
+					</div>
 				  </div>
 				</div>
 			  </div>
@@ -557,15 +565,16 @@
 
 			  <div class="col-lg-6 mt-4">
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="pic"><img src="assets/img/team/team-7.png" class="img-fluid" alt=""></div>
+				  
+					 <div class="pic"><img src="assets/img/team/team-12.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="ptech">Natsy</h4>
-					<span>Moddeur</span>
-					<p>Membre de ComMods, modésaliteur 3D à ses heures perdues. Il est patient en plus d'avoir le souci du détail.</p>
+					<h4>Nicolas D'olan (Numa)</h4>
+					<span>Chef de service au SAMU 93 du serveur</span>
+					<p>Passionné de médecine d'urgence, il assure les fonctions de responsable administratif du service d'aide médicale urgente du serveur.</p>
 				  </div>
 				</div>
 			  </div>
-
+<!--
 			  <div class="col-lg-6 mt-4">
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
 				  <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
@@ -573,9 +582,10 @@
 					<h4 class="ptech">Dom Anderson</h4>
 					<span>Configurateur</span>
 					<p>Configure et administre le serveur. Il permet à l'infrastructure de perdurer.</p>
+					
 					</div>
 				</div>
-			  </div>
+			  </div>-->
 
 			</div>
 			</div>
@@ -620,16 +630,16 @@
 				</div>
 			  </div>
 			  
-			  <div class="col-lg-6 mt-4">
+			 <!-- <div class="col-lg-6 mt-4">
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-				  <div class="pic"><img src="assets/img/team/team-12.png" class="img-fluid" alt=""></div>
+				  <div class="pic"><img src="assets/img/team/team-7.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4>Nicolas D'olan (Numa)</h4>
-					<span>Chef de service au SAMU 93 du serveur</span>
-					<p>Passionné de médecine d'urgence, il assure les fonctions de responsable administratif du service d'aide médicale urgente du serveur.</p>
+					<h4 class="ptech">Natsy</h4>
+					<span>Moddeur</span>
+					<p>Membre de ComMods, modésaliteur 3D à ses heures perdues. Il est patient en plus d'avoir le souci du détail.</p>
 				  </div>
 				</div>
-			  </div>
+			  </div>-->
 
 
 			</div>
@@ -866,11 +876,16 @@
 	<!-- Button Up -->
 	  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 	  <div id="preloader"></div>
+	<!-- Alert Cookie -->
+	<div class="alert text-center cookiealert" role="alert">
+    <b>A ce que vous aimez les cookies?</b> &#x1F36A; Ce site utilise des cookies pour vous offrir le meilleur service. En poursuivant votre navigation, vous acceptez l’utilisation des cookies. <a href="https://www.vliferoleplay.fr/mentions.php#cookie" target="_blank">En savoir plus</a>
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+        J'accepte
+    </button>		
 
+	  <!-- Include cookiealert script -->
+	  <script src="assets/js/cookiealert.js"></script>
 	  <!-- Vendor JS Files  -->
-	  
-	 
-	  
 	  <script src="assets/vendor/jquery/jquery.min.js"></script>
 	  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
