@@ -493,34 +493,29 @@
 				  <div class="member-info">
 					<h4 class="emajor">Alexandre Dawn</h4>
 					<span>CO-CEO | Adjoint chef de projet</span>
-					<p>Administateur réseaux. Directeur du site d'hébergement CosmHost</p>
-					<div class="social">
-					  <a href="https://twitter.com/CosmHost" target="_blank"><i class="ri-twitter-fill"></i></a>
-					  <a href="https://discord.gg/GzCKQ6T" target="_blank"><i class="ri-discord-fill"></i></a>
-					  <a href ="https://cosmhost.com/index.php" target="_blank"><i class="bx bx-link"></i></a>
-					</div>
+					<p>Il a aidé à la création du serveur vLife et participe à son évolution.</p>
 				  </div>
 				</div>
 			  </div>
 
 			  <div class="col-lg-6 mt-4">
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-				  <div class="pic"><img src="assets/img/team/team-3.png" class="img-fluid" alt=""></div>
+				  <div class="pic"><img src="assets/img/team/team-8.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="ptech">Guillaume Shepe</h4>				
-					<span>Lead Pôle Technique</span>
-					<p>Développeur et modélisateur au sein de notre serveur. C'est l'un des couteaux suisses de vLife.</p>
+					<h4 class="emajor">Tydoo Bauer</h4>
+					<span>Adjoint au chef de projet</span>
+					<p>Il est responsable de l'administration technique et réseau de vLife.</p>
 				  </div>
 				</div>
 			  </div>
 
 			  <div class="col-lg-6 mt-4">
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-				  <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+				  <div class="pic"><img src="assets/img/team/team-3.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="ptech">Dom Anderson</h4>
-					<span>Configurateur</span>
-					<p>Configure et administre le serveur. Il permet à l'infrastructure de perdurer.</p>
+					<h4 class="ptech">Guillaume Shepe</h4>				
+					<span>Lead Pôle Technique</span>
+					<p>Développeur et modélisateur au sein de notre serveur. C'est l'un des couteaux suisses de vLife.</p>
 				  </div>
 				</div>
 			  </div>
@@ -573,11 +568,11 @@
 
 			  <div class="col-lg-6 mt-4">
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-				  <div class="pic"><img src="assets/img/team/team-8.png" class="img-fluid" alt=""></div>
+				  <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="emajor">Tydoo Bauer</h4>
-					<span>Adjoint au chef de projet</span>
-					<p>Il est responsable de l'administration technique et réseau de vLife.</p>
+					<h4 class="ptech">Dom Anderson</h4>
+					<span>Configurateur</span>
+					<p>Configure et administre le serveur. Il permet à l'infrastructure de perdurer.</p>
 					</div>
 				</div>
 			  </div>
