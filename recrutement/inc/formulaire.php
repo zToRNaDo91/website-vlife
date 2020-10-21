@@ -635,8 +635,8 @@ return $result;
 							</script>';
 					}else {
 					$discord = $user->id;
-					$url = "https://www.rytrak.fr/api/api_web.php?action=allnotif&role=".$poste."";
-					$url2 = "https://www.rytrak.fr/api/api_web.php?action=sendcandid&discordid=".$discord."";
+					$url = "http://api.rytrak.fr/api/api_web.php?action=allnotif&role=".$poste."";
+					$url2 = "http://api.rytrak.fr/api/api_web.php?action=sendcandid&discordid=".$discord."";
 					$call = call_data($url);
 					$call2 = call_data($url2);
 					if ($call and $call2){

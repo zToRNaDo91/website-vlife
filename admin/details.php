@@ -376,8 +376,8 @@ if ($admin or $recruteur) {
 			   }
 			}
 			if (mysqli_query($mysqli, $sql4)) {
-					$url = "https://www.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
-					$url2 = "https://www.rytrak.fr/api/api_web.php?action=deleterole&discordid=".$id_user."";
+					$url = "http://api.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
+					$url2 = "http://api.rytrak.fr/api/api_web.php?action=deleterole&discordid=".$id_user."";
 					$call = call_data($url);
 					$call2 = call_data($url2);
 					if ($call and $call2){
@@ -456,8 +456,8 @@ if ($admin or $recruteur) {
 				}else {
 				$role = $role;
 				}
-				 $url = "https://www.rytrak.fr/api/api_web.php?action=accept&role=".$role."&discordid=".$id_user."&number=".$id_candid."";
-				 $url2 = "https://www.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
+				 $url = "http://api.rytrak.fr/api/api_web.php?action=accept&role=".$role."&discordid=".$id_user."&number=".$id_candid."";
+				 $url2 = "http://api.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
 				$data = call_data($url);
 				$data2 = call_data($url2);
 				if ($data and $data2) {
@@ -468,7 +468,7 @@ if ($admin or $recruteur) {
 					</script>';
                 }
 				 }else {
-				  $url = "https://www.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
+				  $url = "http://api.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
 				$data = call_data($url);
 				if ($data) {
                     echo '<script language="Javascript">
@@ -499,8 +499,8 @@ if ($admin or $recruteur) {
 				}else {
 				$role = $role;
 				}
-				 $url = "https://www.rytrak.fr/api/api_web.php?action=accept&role=".$role."&discordid=".$id_user."&number=".$id_candid."";
-				 $url2 = "https://www.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
+				 $url = "http://api.rytrak.fr/api/api_web.php?action=accept&role=".$role."&discordid=".$id_user."&number=".$id_candid."";
+				 $url2 = "http://api.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
 				$data = call_data($url);
 				$data2 = call_data($url2);
 				if ($data and $data2) {
@@ -511,7 +511,7 @@ if ($admin or $recruteur) {
 					</script>';
                 }
 				 }else {
-				  $url = "https://www.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
+				  $url = "http://api.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
 				$data = call_data($url);
 				if ($data) {
                     echo '<script language="Javascript">
