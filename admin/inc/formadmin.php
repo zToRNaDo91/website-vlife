@@ -46,7 +46,6 @@ header ('Location: ../');
                 <option  value="Fautes d'orthographe et de grammaire importante">Fautes d'orthographe et de grammaire importante</option>
 				<option value="Le poste que vous avez précisé n'est pas possible en vue de votre âge">Le poste que vous avez précisé n'est pas possible en vue de votre âge</option>
 				<option value="Vous n'avez pas répondu correctement aux questions">Vous n'avez pas répondu correctement aux questions</option>
-           
 			</select>
 			 <div class="invalid-feedback">
 			Merci de sélectionner une raison.
@@ -64,7 +63,9 @@ header ('Location: ../');
                 <option  value="Tricherie">Tricherie</option>
 				<option  value="Manque de respect total pour le lecteur">Manque de respect total pour le lecteur</option>
 				<option value="Mensonge et incohérence sur la candidature">Mensonge et incohérence sur la candidature</option>
-				
+				<option value="Vous avez quitté le serveur">Vous avez quitté le serveur</option>
+				<option value="Double candidature">Double candidature</option>
+           
 				<select>
 				<div class="invalid-feedback">
 				Merci de sélectionner une raison.

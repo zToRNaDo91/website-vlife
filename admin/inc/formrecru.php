@@ -65,6 +65,8 @@ header ('Location: ../');
                 <option  value="Tricherie">Tricherie</option>
 				<option  value="Manque de respect total pour le lecteur">Manque de respect total pour le lecteur</option>
 				<option value="Mensonge et incohérence sur la candidature">Mensonge et incohérence sur la candidature</option>
+				<option value="Vous avez quitté le serveur">Vous avez quitté le serveur</option>
+				<option value="Double candidature">Double candidature</option>
 				</select>
 				<div class="invalid-feedback">
 					Merci de sélectionner une raison.
