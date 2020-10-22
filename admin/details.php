@@ -342,7 +342,7 @@ if ($admin or $recruteur) {
 	<?php	
 	$user = apiRequest($apiURLBase);
 	$avatar = $user->avatar;
-	$discordname = $staff_name . ' ('.$user->username .'#'. $user->discriminator. ')';
+	$discordname = $mysqli->real_escape_string($staff_name . ' ('.$user->username .'#'. $user->discriminator. ')');
 	$id_user = $row['discord'];
 	$id_candid = $row['numero'];
 	$role = $row['poste'];
