@@ -61,6 +61,7 @@ margin-right: 50px;
 	overflow: hidden;
 	word-break: break-all;
 	max-width: 400px;
+	max-height: 500px;
 	resize: vertical;
 	min-height: 30px;
 	padding : 5px;

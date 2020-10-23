@@ -46,6 +46,8 @@ header ('Location: ../');
                 <option  value="Fautes d'orthographe et de grammaire importante">Fautes d'orthographe et de grammaire importante</option>
 				<option value="Le poste que vous avez précisé n'est pas possible en vue de votre âge">Le poste que vous avez précisé n'est pas possible en vue de votre âge</option>
 				<option value="Vous n'avez pas répondu correctement aux questions">Vous n'avez pas répondu correctement aux questions</option>
+				<option value="Votre candidature est trop peu détaillé
+">Votre candidature est trop peu détaillé</option>
 			</select>
 			 <div class="invalid-feedback">
 			Merci de sélectionner une raison.
