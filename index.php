@@ -538,7 +538,7 @@
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
 				  <div class="pic"><img src="assets/img/team/team-5.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="ptech">Charles Bartier</h4>
+					<h4 class="ptech">Charles Bertier</h4>
 					<span>Développeur logiciel</span>
 					<p>Développe, héberge et assure la maintenance de logiciels pour le serveur.</p>
 				  </div>
