@@ -574,18 +574,17 @@
 				  </div>
 				</div>
 			  </div>
-<!--
+
 			  <div class="col-lg-6 mt-4">
 				<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-				  <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+				  <div class="pic"><img src="assets/img/team/team-4.png" class="img-fluid" alt=""></div>
 				  <div class="member-info">
-					<h4 class="ptech">Dom Anderson</h4>
-					<span>Configurateur</span>
-					<p>Configure et administre le serveur. Il permet à l'infrastructure de perdurer.</p>
-					
+					<h4 class="staff">AuraAngel</h4>
+					<span>Développeur web | <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Responsable Ressource Humaine">RRH</a> du serveur</span>
+					<p>Développeur web de ce site et <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Responsable Ressource Humaine">RRH</a> du serveur.</p>
 					</div>
 				</div>
-			  </div>-->
+			  </div>
 
 			</div>
 			</div>
