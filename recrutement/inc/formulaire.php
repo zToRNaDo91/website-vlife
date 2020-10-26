@@ -648,7 +648,11 @@ return $result;
 					}
 					}
             }else{
-                echo "Erreur" . mysqli_error($mysqli);}
+                echo '<script language="Javascript"> 
+				<!--
+				window.alert( "Il y a eu une erreur lors de l\'envoie de la candidature, merci de contacté l\'admin et de lui fournir cette erreur : ' . mysqli_error($mysqli) .'")
+				// -->
+				</script>';}
 		}
 
 		 }
