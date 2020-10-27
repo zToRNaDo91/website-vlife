@@ -127,7 +127,7 @@ if ($admin or $recruteur) {
 	} else {
 	$link = 'https://discord.com/assets/6debd47ed13483642cf09e832ed0bc1b.png';
 	}
-	echo '<center><h3>Candidature #'.$row['numero'].'</h3> <h3>Par :';?><img onerror="this.onerror=null; this.src='https://discord.com/assets/6debd47ed13483642cf09e832ed0bc1b.png'" <?php echo ' class="img-rounded" src="'.$link.'" width ="50"> '.$row['username'].'</h3></center><br>';
+	echo '<center><h3>Candidature #'.$row['numero'].'</h3> <h3>Par :<img onerror="this.onerror=null; this.src=\'https://discord.com/assets/6debd47ed13483642cf09e832ed0bc1b.png\'" class="img-rounded" src="'.$link.'" width ="50"> '.$row['username'].'</h3></center><br>';
 	echo '<div class="header"></div> <br>';
 	echo '<div class="centre">';
 	echo 'Poste : <br> '.$row['poste'].'<div class ="hr"></div><br>';
