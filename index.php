@@ -494,7 +494,7 @@
 				  <div class="member-info">
 					<h4 class="emajor">Alexandre Dawn</h4>
 					<span>CO-CEO | Adjoint chef de projet</span>
-					<p>Il a aidé à la création du serveur vLife et participe à son évolution.</p>
+					<p>Il a aidé à la création du serveur vLife et participe à son évolution.</p><br><br>
 				
 				  </div>
 				</div>
@@ -540,7 +540,7 @@
 				  <div class="member-info">
 					<h4 class="ptech">Charles Bertier</h4>
 					<span>Développeur logiciel</span>
-					<p>Développe, héberge et assure la maintenance de logiciels pour le serveur.</p>
+					<p>Développe, héberge et assure la maintenance de logiciels pour le serveur.</p><br>
 				  </div>
 				</div>
 			  </div>
@@ -570,7 +570,7 @@
 				  <div class="member-info">
 					<h4>Nicolas D'olan (Numa)</h4>
 					<span>Chef de service au SAMU 93 du serveur</span>
-					<p>Passionné de médecine d'urgence, il assure les fonctions de responsable administratif du service d'aide médicale urgente du serveur.</p>
+					<p>Passionné de médecine d'urgence, il assure les fonctions de responsable administratif du service d'aide médicale urgente du serveur.</p><br>
 				  </div>
 				</div>
 			  </div>
@@ -581,7 +581,7 @@
 				  <div class="member-info">
 					<h4 class="staff">AuraAngel</h4>
 					<span>Développeur web | <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Responsable Ressource Humaine">RRH</a> du serveur</span>
-					<p>Développeur web de ce site et <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Responsable Ressource Humaine">RRH</a> du serveur.</p>
+					<p>Développeur web de ce site et <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Responsable Ressource Humaine">RRH</a> du serveur.</p><br><br>
 					</div>
 				</div>
 			  </div>
@@ -612,7 +612,7 @@
 				  <div class="member-info">
 					<h4 class="staff">Philippe Masson</h4>
 					<span>Commandant de Police - Adjoint au chef de service de la circonscription d’Aulnay-Sous-Bois du serveur</span>
-					<p>Ancien policier, ce joueur ambitieux prouve à tous que la rigueur n’est pas innée et s’acquiert avec le travail.</p>
+					<p>Ancien policier, ce joueur ambitieux prouve à tous que la rigueur n’est pas innée et s’acquiert avec le travail.</p><br>
 				  </div>
 				</div>
 			  </div>
@@ -623,7 +623,7 @@
 				  <div class="member-info">
 					<h4 class="staff">Pharrel Williams</h4>
 					<span>Capitaine de Police et responsable <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Service d’accueil et d’investigation de proximité">SAIP</a> du serveur</span>
-					<p>Également professionnel du métier, il gère le pôle <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Service d’accueil et d’investigation de proximité">SAIP</a> de la police nationale du serveur.</p>
+					<p>Également professionnel du métier, il gère le pôle <a class="tip" data-toggle="tooltip" data-placement="bottom" title="Service d’accueil et d’investigation de proximité">SAIP</a> de la police nationale du serveur.</p><br>
 				  
 				  </div>
 				</div>
@@ -635,7 +635,7 @@
 				  <div class="member-info">
 					<h4 class="ptech">Natsy</h4>
 					<span>Moddeur</span>
-					<p>Membre de ComMods, modésaliteur 3D à ses heures perdues. Il est patient en plus d'avoir le souci du détail.</p>
+					<p>Membre de ComMods, modésaliteur 3D à ses heures perdues. Il est patient en plus d'avoir le souci du détail.</p><br>
 				  </div>
 				</div>
 			  </div>-->

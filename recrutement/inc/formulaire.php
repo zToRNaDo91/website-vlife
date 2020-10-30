@@ -224,14 +224,14 @@ header ('Location: ../');
 				</div>
 				<div class="form-group">
 					  <label for="XP">Votre expérience en RP (le jeu + nom du serveur + rang + plateforme) <span style='color:red'>*</span></label>
-					  <textarea name="XP" class="form-control" id="XP" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
+					  <textarea name="XP" class="form-control" id="XP" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
 				</div>
 				<div class="form-group">
 					  <label for="RP">Les gameplay que vous avez joué (+ exemple de scène RP) <span style='color:red'>*</span></label>
-					  <textarea name="RP" class="form-control" id="RP" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
+					  <textarea name="RP" class="form-control" id="RP" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
@@ -271,14 +271,14 @@ header ('Location: ../');
 				  
 				<div class="form-group">
 					  <label for="motive">Présentez votre motivation pour nous rejoindre <span style='color:red'>*</span></label>
-					  <textarea name="motive" class="form-control" id="motive" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
+					  <textarea name="motive" class="form-control" id="motive" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
 				</div>
 				<div class="form-group">
 					  <label for="scenario">Inventez une intervention/scénario quotidienne/commune roleplay que vous pourrez réaliser en tant que civil pour les secours <span style='color:red'>*</span></label>
-					  <textarea name="scenario" class="form-control" id="scenario" minlength="30" maxlength="414" required  data-limit-rows="true" rows="10"/></textarea>
+					  <textarea name="scenario" class="form-control" id="scenario" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
