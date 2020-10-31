@@ -202,13 +202,13 @@ header ('Location: ../');
 				  <div class="tab">
 				  
 				  <div class="form-group ">
-				  <label for "poste"> Quel est le poste pour lequel vous souhaitez postuler ? <span style='color:red'>*</span><br>
+				  <label for="poste"> Quel est le poste pour lequel vous souhaitez postuler ? <span style='color:red'>*</span><br>
 					<i>👉 Le poste "Organisme civil / Vie civile" comprend l'accès à la vie civile du serveur, <br>
-					mais aussi le Volontaire Service Civique des sapeurs pompiers (mission de secourisme à l'ambulance), <br>
+					mais aussi le Volontaire Service Civique des sapeurs pompiers (mission de secourisme à l'ambulance),
 					et l'Adjoint de Sécurité de la police nationale (patrouille avec des gardiens de la paix).<br>
 					Seul la vie civil est accessible dès 15 ans, le reste est accessible à partir de 16 ans</i>
 					</label>
-				  <select class="custom-select" name="poste" id="poste" maxlength="100" required>
+				  <select style="color:black;" class="custom-select" name="poste" id="poste" maxlength="100" required>
 				  <option selected value="" required>Sélectionner un poste</option>
 				  <option value="Pompier"> Sapeurs-Pompiers</option>
 				  <option value="Opérateur 18">Opérateur 18</option>
@@ -224,14 +224,14 @@ header ('Location: ../');
 				</div>
 				<div class="form-group">
 					  <label for="XP">Votre expérience en RP (le jeu + nom du serveur + rang + plateforme) <span style='color:red'>*</span></label>
-					  <textarea name="XP" class="form-control" id="XP" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
+					  <textarea name="XP" class="form-control" id="XP" minlength="30" maxlength="830" required  data-limit-rows="true" rows="10" ligne="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
 				</div>
 				<div class="form-group">
 					  <label for="RP">Les gameplay que vous avez joué (+ exemple de scène RP) <span style='color:red'>*</span></label>
-					  <textarea name="RP" class="form-control" id="RP" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
+					  <textarea name="RP" class="form-control" id="RP" minlength="30" maxlength="830" required  data-limit-rows="true" rows="10" ligne="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
@@ -258,7 +258,7 @@ header ('Location: ../');
 				
 				<div class="form-group" id ="1" style="display:none;">
 					   <label for="2"> Quel métier, et depuis combien de temps ? <span style='color:red'>*</span></label>
-					  <textarea name="met" class="form-control" minlength="30" id="2" maxlength="414" rows="3"/></textarea>
+					  <textarea name="met" class="form-control" minlength="30" id="2" data-limit-rows="true" maxlength="414" rows="3" ligne="10"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
@@ -271,14 +271,14 @@ header ('Location: ../');
 				  
 				<div class="form-group">
 					  <label for="motive">Présentez votre motivation pour nous rejoindre <span style='color:red'>*</span></label>
-					  <textarea name="motive" class="form-control" id="motive" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
+					  <textarea name="motive" class="form-control" id="motive" minlength="30" maxlength="830" required  data-limit-rows="true" rows="10" ligne="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
 				</div>
 				<div class="form-group">
 					  <label for="scenario">Inventez une intervention/scénario quotidienne/commune roleplay que vous pourrez réaliser en tant que civil pour les secours <span style='color:red'>*</span></label>
-					  <textarea name="scenario" class="form-control" id="scenario" minlength="30" maxlength="830" required  data-limit-rows="true" rows="20"/></textarea>
+					  <textarea name="scenario" class="form-control" id="scenario" minlength="30" maxlength="830" required  data-limit-rows="true" rows="10" ligne="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
@@ -378,12 +378,22 @@ Si vous estimez, après nous avoir contactés, que vos droits « Informatique et
 					var textarea = $(this),
 						text = textarea.val(),
 						numberOfLines = (text.match(/\n/g) || []).length + 1,
-						maxRows = parseInt(textarea.attr('rows'));
+						maxRows = parseInt(textarea.attr('ligne'));
 			 
 					if (event.which === 13 && numberOfLines === maxRows ) {
 					  return false;
 					}
 				});
+			$("#age").keyup(function() {
+					if (this.value <= "15") {
+					
+					
+					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Civil'>Organisme civil / Vie Civil</option>");
+					}
+					else{
+					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Pompier'> Sapeurs-Pompiers</option><option value='Opérateur 18'>Opérateur 18</option><option value='Police'>Police Nationale</option><option value='Opérateur 17'> Opérateur 17</option><option value='SAMU'>SAMU 93 / SMUR</option><option value='Opérateur 15'>Opérateur 15</option><option value='Civil'>Organisme civil / Vie Civil</option>");
+					}
+					});
 			});
 			window.onbeforeunload = function(){
 			return 'Are you sure you want to leave?';
