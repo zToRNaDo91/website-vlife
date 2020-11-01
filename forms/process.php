@@ -19,6 +19,7 @@ try {
 	$mail->SMTPDebug  = 0; 
 	$mail->isSMTP();                                            // Send using SMTP
 	$mail->CharSet = 'UTF-8';
+	$mail->setLanguage('fr','PHPMailer/language/');
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'vlifeheberg@gmail.com';                     // SMTP username
@@ -50,6 +51,6 @@ try {
 	echo '<script> $("#message").removeClass("error-message").addClass("sent-message");</script>';
     echo 'Votre message a bien été envoyé.';
 } catch (Exception $e) {
-    echo "Oups il y a eu un problème Erreur: {$mail->ErrorInfo}";
+     echo "Oups il y a eu un problème <br> {$mail->ErrorInfo}";
 }
 ?>
