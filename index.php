@@ -819,7 +819,7 @@
 
 			  <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
 				<!--<form action="forms/contact.php" method="post" role="form" class="php-email-form">-->
-				<form role="form" action="forms/form-process.php" id="contactForm" data-toggle="validator" class="php-email-form">
+				<form role="form" action="forms/process.php" id="contactForm" data-toggle="validator" class="php-email-form">
 				  <div class="form-row">
 					<div class="form-group col-md-6">
 					  <label for="name">Votre nom</label>
@@ -854,7 +854,7 @@
 				  </div>
 				  <div class="mb-3">
 					<div class="loading">Chargement</div>
-					<div class="error-message"></div>
+					<div id ="message"class="error-message"></div>
 					<div class="sent-message">Ton message a été envoyé, merci</div>
 				  </div>
 				  <div class="text-center"><button type="submit">Envoyer</button></div>
