@@ -40,6 +40,15 @@ header ('Location: ../');
 }
 		</style>
 		<script>
+	$(document).click(function (e) {
+           e.stopPropagation();
+          var container = $(".multiselect");
+
+       //check if the clicked area is dropDown or not
+        if (container.has(e.target).length === 0) {
+         $('#checkboxes').hide();
+         }
+        })
 		var expanded = false;
 		function showCheckboxes() {
 		  var checkboxes = document.getElementById('checkboxes');
