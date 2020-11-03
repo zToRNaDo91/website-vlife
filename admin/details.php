@@ -383,9 +383,26 @@ if ($admin or $recruteur) {
 			if (mysqli_query($mysqli, $sql4)) {
 					$url = "http://api.rytrak.fr/api/api_web.php?action=updatecandid&discordid=".$id_user."";
 					$url2 = "http://api.rytrak.fr/api/api_web.php?action=deleterole&discordid=".$id_user."";
+					if ($_POST['oral'] == 'Accepter') {
+					$rep = array();
+					if(!empty($_POST['role'])) {
+							foreach($_POST['role'] as $check) {
+							$rep[] = $check;
+							}
+					$roles = implode('%20', $rep);
+					$pseudo = $_POST['pseudo'];
+					$url3 = "http://api.rytrak.fr/api/api_web.php?action=addrole&discordid=".$id_user."&role=".$roles."";
+					$url4 = "http://api.rytrak.fr/api/api_web.php?action=changenickname&discordid=".$id_user."&newnick=".$pseudo."";
+					$call3 = call_data($url3);
+					$call4 = call_data($url4);
+					}else {
+					$call3 = true;
+					$call4 = true;
+					}
+					}
 					$call = call_data($url);
 					$call2 = call_data($url2);
-					if ($call and $call2){
+					if ($call and $call2 and $call3 and $call4){
                       echo '<script language="Javascript">
 					<!--
 					document.location.replace("details.php?discord='.$_GET['discord'].'&number='.$_GET['number'].'");
