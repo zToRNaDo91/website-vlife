@@ -73,14 +73,8 @@ function myFunction() {
 							- Vous devez être sûr d'être disponible avant de prendre rendez-vous.<br>
 							- Du sérieux et une rigueur à toute épreuve.<br>
 							- <?php 
-							if ($poste == 'Opérateur 15' or $poste == 'Opérateur 17' or $poste == 'Opérateur 18'){ 
-								if ($poste == 'Opérateur 17') {
-								$notif = '@Officier PN';
-								} elseif ($poste == 'Opérateur 15') {
+							if ($poste == 'Opérateur 15') {
 								$notif = '@Cadre SAMU';
-								} else { 
-								$notif ='@Officier SP' ;
-								}
 							} elseif ($poste == 'Police' or $poste == 'Pompier' or $poste =='SAMU')
 								{
 								if ($poste == 'Police') {
@@ -110,12 +104,8 @@ function myFunction() {
 							 <p align="left">
 							Après quoi;<br>
 							Vous devez <b>prendre un rendez-vous</b> avec le recruteur charger du corps de métier 
-							<?php if ($poste == 'Opérateur 15' or $poste == 'Opérateur 17' or $poste == 'Opérateur 18'){ 
-							if ($poste == 'Opérateur 17') {
-							echo 'Police';
-							} elseif ($poste == 'Opérateur 15') {
+							<?php if ($poste == 'Opérateur 15') {
 							echo 'SAMU';
-							} else { echo 'Pompier';}
 							} else {echo $row['poste'];}?>, <b>via le salon rendez-vous.</b><br>
 							Vous devez <b>préciser vos disponibilités dans la dernière ligne du format</b><br>
 							Vous serez contacter sous un délai de 48h pour votre rendez-vous. <br>

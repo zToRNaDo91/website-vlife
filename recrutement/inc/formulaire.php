@@ -211,9 +211,7 @@ header ('Location: ../');
 				  <select style="color:black;" class="custom-select" name="poste" id="poste" maxlength="100" required>
 				  <option selected value="" required>Sélectionner un poste</option>
 				  <option value="Pompier"> Sapeurs-Pompiers</option>
-				  <option value="Opérateur 18">Opérateur 18</option>
 				  <option value="Police">Police Nationale</option>
-				  <option value="Opérateur 17"> Opérateur 17</option>
 				  <option value="SAMU">SAMU 93 / SMUR</option>
 				  <option value="Opérateur 15">Opérateur 15</option>
 				  <option value="Civil">Organisme civil / Vie Civil</option>
@@ -391,7 +389,7 @@ Si vous estimez, après nous avoir contactés, que vos droits « Informatique et
 					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Civil'>Organisme civil / Vie Civil</option>");
 					}
 					else{
-					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Pompier'> Sapeurs-Pompiers</option><option value='Opérateur 18'>Opérateur 18</option><option value='Police'>Police Nationale</option><option value='Opérateur 17'> Opérateur 17</option><option value='SAMU'>SAMU 93 / SMUR</option><option value='Opérateur 15'>Opérateur 15</option><option value='Civil'>Organisme civil / Vie Civil</option>");
+					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Pompier'> Sapeurs-Pompiers</option><option value='SAMU'>SAMU 93 / SMUR</option><option value="Police">Police Nationale</option><option value='Opérateur 15'>Opérateur 15</option><option value='Civil'>Organisme civil / Vie Civil</option>");
 					}
 					});
 			});
@@ -624,17 +622,10 @@ return $result;
 		
 		$result = $mysqli->query($requete);
 		 if ($result) {
-				if ($poste == 'Opérateur 15' or $poste == 'Opérateur 18' or $poste =='Opérateur 17') {
-					if ($poste == 'Opérateur 15') {
-					$poste = "OPE15";
-					} 
-					if ($poste == 'Opérateur 18') {
-					$poste = "OPE18";
-					}
-					if ($poste == 'Opérateur 17') {
-					$poste = "OPE17";
-					} 
-				}else {
+				if ($poste == 'Opérateur 15') {
+				$poste = "OPE15";
+				} 
+				else {
 				$poste = $_POST['poste'];
 				}
 					if ($age <= 14) {
