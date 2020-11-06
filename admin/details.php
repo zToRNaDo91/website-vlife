@@ -391,6 +391,7 @@ if ($admin or $recruteur) {
 							}
 					$roles = implode('%20', $rep);
 					$pseudo = $_POST['pseudo'];
+					$pseudo = str_replace ( ' ', '%20', $pseudo);
 					$url3 = "http://api.rytrak.fr/api/api_web.php?action=addrole&discordid=".$id_user."&role=".$roles."";
 					$url4 = "http://api.rytrak.fr/api/api_web.php?action=changenickname&discordid=".$id_user."&newnick=".$pseudo."";
 					$call3 = call_data($url3);
@@ -399,6 +400,9 @@ if ($admin or $recruteur) {
 					$call3 = true;
 					$call4 = true;
 					}
+					}else {
+					$call4 = true;
+					$call3 = true;
 					}
 					$call = call_data($url);
 					$call2 = call_data($url2);
