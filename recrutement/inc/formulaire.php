@@ -389,7 +389,7 @@ Si vous estimez, après nous avoir contactés, que vos droits « Informatique et
 					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Civil'>Organisme civil / Vie Civil</option>");
 					}
 					else{
-					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Pompier'> Sapeurs-Pompiers</option><option value='SAMU'>SAMU 93 / SMUR</option><option value="Police">Police Nationale</option><option value='Opérateur 15'>Opérateur 15</option><option value='Civil'>Organisme civil / Vie Civil</option>");
+					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Pompier'> Sapeurs-Pompiers</option><option value='SAMU'>SAMU 93 / SMUR</option><option value='Police'>Police Nationale</option><option value='Opérateur 15'>Opérateur 15</option><option value='Civil'>Organisme civil / Vie Civil</option>");
 					}
 					});
 			});

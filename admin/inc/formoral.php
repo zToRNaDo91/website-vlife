@@ -119,10 +119,10 @@ $(window).on('load', function() {
 				</div>
 				<?php
 				$poste = $row['poste'];
-				if ($poste== 'Pompier' or $poste =='OPE18'){
+				if ($poste== 'Pompier' or $poste =='Opérateur 18'){
 				echo '
 				<div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" name="role[]" id="two" value="676539765578792981"/>
+				<input type="checkbox" class="custom-control-input" name="role[]" id="two" value="676539765578792981" checked disabled/>
 				 <label for="two" class="custom-control-label">CIR</label>
 				</div>
 				<div class="custom-control custom-checkbox">
@@ -130,14 +130,14 @@ $(window).on('load', function() {
 				 <label for="three" class="custom-control-label">OPE18</label>
 				</div>
 				';
-				}elseif ($poste== 'Police' or $poste =='OPE17'){
+				}elseif ($poste== 'Police' or $poste =='Opérateur 17'){
 				echo '
 				<div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" name="role[]" id="two" value="677597098597810249"/>
+				<input type="checkbox" class="custom-control-input" name="role[]" id="two" value="677597098597810249" checked disabled/>
 				 <label for="two" class="custom-control-label">ELEVE</label>
 				</div>
 				<div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" name="role[]" id="three" value="721658537217884221"/>
+				<input type="checkbox" class="custom-control-input" name="role[]" id="three" value="721658537217884221" checked disabled/>
 				 <label for="three" class="custom-control-label">ADS</label>
 				</div>
 				<div class="custom-control custom-checkbox">
@@ -146,10 +146,10 @@ $(window).on('load', function() {
 				</div>
 				';
 				}
-				elseif ($poste== 'SAMU' or $poste == 'OPE15'){
+				elseif ($poste== 'SAMU' or $poste == 'Opérateur 15'){
 				echo '
 				<div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" name="role[]" id="two" value="676539882188832774"/>
+				<input type="checkbox" class="custom-control-input" name="role[]" id="two" value="676539882188832774" checked disabled/>
 				 <label for="two" class="custom-control-label">SAMU-93/SMUR</label>
 				</div>
 				<div class="custom-control custom-checkbox">
