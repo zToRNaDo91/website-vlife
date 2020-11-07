@@ -72,7 +72,7 @@ include '../inc/connect.php';
 		FROM info
 		LEFT JOIN category ON info.category_id=category.id
 		LEFT JOIN recruteur ON info.numero=numero2
-		WHERE category.name="En Attente"
+		WHERE category.name="En Attente" or category.name="Verrouillée"
 		ORDER BY numero DESC');
 		$requete2 = mysqli_query($mysqli,'SELECT numero,discord, poste, username, email, age, category.name, date, recruteur.numero2, oral
 		FROM info

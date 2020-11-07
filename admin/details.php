@@ -52,13 +52,87 @@ if ($admin or $recruteur) {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+<style>
+.fa {
+	width:-1px;
+	font-size: 20px;
+	text-align: center;
+	bottom: 5px;
+	position: relative;
+}
+.toggle {
+  background-color: #ddddde;
+  border-radius: 60px;  
+  box-shadow: 0 1px 1px 0 rgba(255,255,255,.4), 0 1px 0 0 rgba(0,0,0,0.10) inset;
+  cursor: pointer;
+  width: 90px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  top: 5px;
+  right:5px;
+  transition: all .25s linear;
+  float:right;
+}
+.toggle .slide {
+  color: #818283;
+  color: rgba(0,0,0,.15);
+  background: #efefef;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: none;
+  height: 33px;
+  width: 33px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15), 0 1px 1px 0 rgba(255,255,255,.8) inset;
+  transition: all 0.3s cubic-bezier(0.43, 1.3, 0.86, 1);
+}
+.toggle .slide span{
+    text-shadow: 0 1px 1px rgba(255,255,255,.7), 0 0 1px rgba(0,0,0,.3);       
+}
+.toggle .slide:before, 
+.toggle .slide:after {
+  color: #FFF;
+  content: "\f023";
+  font-family: fontAwesome;
+  font-size: 34px;
+  font-weight: 400;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+}
+.toggle .slide:before {
+  right: -30px;
+  color: #2a2b2c;
+  opacity: 0.2;
+}
+.toggle .slide:after {
+  content: "\f09c";
+  left: -40px;
+  color: #00ba00;
+}
+.toggle.on {
+  background: #00dc00;
+}
+.toggle.on .slide {
+  left: 50px;
+  color: #00d100;
+}
+.low {
+	position: relative;
+	top: 40px;
+}
+	</style>
 </head>
 <body>
 <?php
 	 include 'inc/header3.php';
 	include '../inc/connect.php';
-   $result = mysqli_query($mysqli,"SELECT numero,age,name,raison,prenom,passion,email,username,discord,date,micro,gta,conge,travail,absent,dispo,poste,XP,RP,qual,metier,met,avatar,category_id,motive,autre,validation,scenario
+   $result = mysqli_query($mysqli,"SELECT numero,age,verrouiller,name,raison,prenom,passion,email,username,discord,date,micro,gta,conge,travail,absent,dispo,poste,XP,RP,qual,metier,met,avatar,category_id,motive,autre,validation,scenario
    FROM info 
    LEFT JOIN category ON info.category_id=category.id 
    WHERE numero = '".$_GET['number']."' AND category_id=category.id 
@@ -77,7 +151,7 @@ if ($admin or $recruteur) {
    $date_traitement = date("d/m/Y à H:i:s", strtotime($date_est2));
    $date_est3 = $row3 ['date_recrutoral'];
    $date_traitement2 = date("d/m/Y à H:i:s", strtotime($date_est3));
-
+   $catego = $row['category_id'];	
      if (!empty ($row4['bulletin'])) {
    $bulletin = $row4['bulletin'] ;
    } else {
@@ -120,8 +194,18 @@ if ($admin or $recruteur) {
 		else $Age = $Date[2] - $DateNaissance[2] /*- 1*/;
 		return $Age;
 		}
-	
-	echo '<br><div class="header"></div> <br>';
+	if ($row['category_id'] == '1' or $row['category_id'] == '7') {
+				echo '<div class="toggle">
+			   <div class="slide">
+			   <form method="post" action="">
+				 <input type="checkbox" id="checkbox" style="display:none" id="checkbox" value="1" name="checkbox" />
+			   </form>
+				 <span class="fa fa-circle-o"></span>
+			  </div>
+			</div>
+			 <div class="result"></div>';
+			 }
+	echo '<br><div class="header low"></div> <br>';
 	if (!empty($row['avatar'])) {
 	$link = 'https://cdn.discordapp.com/avatars/'. $row['discord'] .'/'. $row['avatar'] .'.png?size=128';
 	} else {
@@ -246,6 +330,14 @@ if ($admin or $recruteur) {
 	
 	echo '</div> <br>';
 	echo '<div class="header"></div> <br>';
+	$verrouiller = $row ['verrouiller'];
+		if ( !empty($verrouiller)) {
+		if ($catego =='7') {
+		echo 'Candidature verrouillée par : '. $verrouiller. '<br>' ;
+		} elseif ($catego =='1') {
+		echo 'Candidature déverrouillée par : '. $verrouiller ;
+		}
+		}
 	if ($row['category_id'] != 1) {
 		if ($row3['traitement'] != '') {
 			echo '<br>Status : '.$row['name'].'   à l\'écrit<br> Traité par : '.$row3['traitement'].'<br> En date du : '.$date_traitement.'<br> ';
@@ -601,9 +693,54 @@ if ($admin or $recruteur) {
 <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
 <script src="assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 
+<?php
+if ($catego=='7') {
+$msg = 'yes'; } 
+else { $msg = 'no';}
+$num = $_GET['number'];
+$discordname = $staff_name . ' ('.$user->username .'/'. $user->discriminator. ')';
+?>
 <script>
-
+$(function() {
+    $('.toggle').on('click', function() {
+	var checkbox = $('#checkbox').val();
+			  $.ajax
+				({
+				  type: "POST",
+				  url: "inc/lock_submit.php?number=<?php echo $_GET['number'];?>&name=<?php echo $discordname;?>",
+				  data: { "checkbox": checkbox },
+				  success: function (data) {
+					$('.result').html(data);
+					document.location.reload(true);
+					//return false;
+					//$('#checkbox').setAttribute("checked", "");
+					//$('#contactForm')[0].reset();
+				  }
+				});
+	
+	
+		var a = document.getElementById('checkbox');
+	  if ($(this).hasClass('on')) {
+		 $(this).removeClass('on');
+		 $('#checkbox').attr("value", "1");
+		$('#checkbox').removeAttr("checked", "");	
+      } else {
+	  $(this).addClass('on');
+	   $('#checkbox').attr("value", "7");
+	  $('#checkbox').attr("checked", "");	
+      }
+    });
+  });
 $(document).ready(function() {
+	var msg = '<?php echo $msg;?>';
+	if (msg == 'yes') {
+	$('.toggle').removeClass("on");
+	 $('#checkbox').attr("value", "1");
+	}else {
+	$('.toggle').addClass("on");
+	$('#checkbox').attr("checked", "");	
+	 $('#checkbox').attr("value", "7");
+	}
 	$.each($('#navi').find('li'), function() {
 				$(this).toggleClass('active', 
 					window.location.pathname.indexOf($(this).find('a').attr('href')) > -1);
