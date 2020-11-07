@@ -104,7 +104,7 @@
 	$user = apiRequest($apiURLBase);
 	$result = mysqli_query($mysqli, " SELECT numero,discord,raison, recrutoral, raison_oral, date_traitement,poste, date_recrutoral, oral, category_id,username from info LEFT JOIN recruteur ON info.numero= recruteur.numero2 WHERE info.discord='". $user->id ."' ORDER BY `numero` DESC LIMIT 1"); 
 			 $result0 = mysqli_query($mysqli, "SELECT discord,category_id FROM info WHERE category_id = '5' AND info.discord='". $user->id ."' ORDER BY `numero` DESC"); 
-			 $result2 = mysqli_query($mysqli, "SELECT discord,category_id FROM info WHERE category_id = '1' AND info.discord='".$user->id."' ORDER BY `numero` DESC"); 
+			 $result2 = mysqli_query($mysqli, "SELECT discord,category_id FROM info WHERE category_id = '1' or category_id= '7' AND info.discord='".$user->id."' ORDER BY `numero` DESC"); 
 			 $result3 = mysqli_query($mysqli, "SELECT discord,category_id FROM info WHERE category_id = '2' AND info.discord='".$user->id."' ORDER BY `numero` DESC");
 			  $result4 = mysqli_query($mysqli, "SELECT discord,category_id FROM info WHERE category_id = '3' AND info.discord='".$user->id."' ORDER BY `numero` DESC");
 			  $result5= mysqli_query($mysqli, "SELECT discord,category_id FROM info WHERE category_id = '4' AND info.discord='".$user->id."' ORDER BY `numero` DESC"); 	
