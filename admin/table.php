@@ -101,8 +101,8 @@ include '../inc/connect.php';
 		<ul class="nav nav-tabs faq-cat-tabs">
                 <li><a href="#1" data-toggle="tab" class="moving-tab" onclick="showt(1), hidet(2); hidet(4); hidet(3)">Tout Afficher <span class="badge"><?php echo $nb; ?></span></a></li>
                 <li><a href="#2" data-toggle="tab" class="moving-tab" onclick="showt(2); hidet(1); hidet(4); hidet(3)">En Attente <span class="badge"><?php echo $nb1; ?></span></a></li>
-				<li><a href="#3" data-toggle="tab" class="moving-tab" onclick="showt(3); hidet(1); hidet(4); hidet(2);">Accepter <span class="badge"><?php echo $nb2; ?></span></a></li>
-                <li><a href="#4" data-toggle="tab" class="moving-tab" onclick="showt(4); hidet(1); hidet(3); hidet(2);">Refuser <span class="badge"><?php echo $nb3; ?></span></a></li>
+				<li><a href="#3" data-toggle="tab" class="moving-tab" onclick="showt(3); hidet(1); hidet(4); hidet(2);">Accepté <span class="badge"><?php echo $nb2; ?></span></a></li>
+                <li><a href="#4" data-toggle="tab" class="moving-tab" onclick="showt(4); hidet(1); hidet(3); hidet(2);">Refusé <span class="badge"><?php echo $nb3; ?></span></a></li>
         </ul>
 		</div>
 		 <div class="tab-pane active in" aria-expanded="true" id="1" style="display:block">
@@ -116,7 +116,7 @@ include '../inc/connect.php';
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
-					<th>Status</th>
+					<th>Statut</th>
 					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
@@ -137,6 +137,14 @@ include '../inc/connect.php';
 					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
 					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
 					else {$oral = '<small><i>N/A</i></small>';}
+					$statut = $ligne['name'];
+					if ($statut == 'Accepter') {
+					$statut = 'Accepté';
+					}else if ($statut == 'Refuser') {
+					$statut = 'Refusé';
+					}else {
+					$statut = $statut;
+					}
 					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
@@ -144,7 +152,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['username'];?></th>
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
-					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $statut;?></th>
 					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>
@@ -172,7 +180,7 @@ include '../inc/connect.php';
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
-					<th>Status</th>
+					<th>Statut</th>
 					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
@@ -189,6 +197,14 @@ include '../inc/connect.php';
 					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
 					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
 					else {$oral = '<small><i>N/A</i></small>';}
+					$statut = $ligne['name'];
+					if ($statut == 'Accepter') {
+					$statut = 'Accepté';
+					}else if ($statut == 'Refuser') {
+					$statut = 'Refusé';
+					}else {
+					$statut = $statut;
+					}
 					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
@@ -196,7 +212,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['username'];?></th>
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
-					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $statut;?></th>
 					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>
@@ -223,7 +239,7 @@ include '../inc/connect.php';
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
-					<th>Status</th>
+					<th>Statut</th>
 					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
@@ -240,6 +256,14 @@ include '../inc/connect.php';
 					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
 					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
 					else {$oral = '<small><i>N/A</i></small>';}
+					$statut = $ligne['name'];
+					if ($statut == 'Accepter') {
+					$statut = 'Accepté';
+					}else if ($statut == 'Refuser') {
+					$statut = 'Refusé';
+					}else {
+					$statut = $statut;
+					}
 					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
@@ -247,7 +271,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['username'];?></th>
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
-					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $statut;?></th>
 					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>
@@ -275,7 +299,7 @@ include '../inc/connect.php';
                     <th>Pseudo</th>
                     <th>Email</th>
                     <th>Âge</th>
-					<th>Status</th>
+					<th>Statut</th>
 					<th>Oral</th>
 					<th>Reception</th>
 					<th><b>Actions</b></th>
@@ -292,6 +316,14 @@ include '../inc/connect.php';
 					if ($oral == 'Accepter'){$oral = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>';} 
 					elseif ($oral =='Refuser') { $oral = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>';}
 					else {$oral = '<small><i>N/A</i></small>';}
+					$statut = $ligne['name'];
+					if ($statut == 'Accepter') {
+					$statut = 'Accepté';
+					}else if ($statut == 'Refuser') {
+					$statut = 'Refusé';
+					}else {
+					$statut = $statut;
+					}
 					?>
 					<th><?php echo "$",$ligne['numero'];?></th>
 					<th><?php echo $ligne['poste'];?></th>
@@ -299,7 +331,7 @@ include '../inc/connect.php';
                     <th><?php echo $ligne['username'];?></th>
                     <th><?php echo $ligne['email'];?></th>
                     <th><?php echo $ligne ['age'].' ans';?></th>
-					<th><?php echo $ligne ['name'];?></th>
+					<th><?php echo $statut;?></th>
 					<th><?php echo $oral;?></th>
 					<th><?php echo $date;?></th>
 					<td><a class="btn btn-primary a-btn-slide-text" href="details.php?discord=<?=$ligne['discord']?>&number=<?=$ligne['numero']?>"><i class="fa fa-edit" aria-hidden="true"></i>

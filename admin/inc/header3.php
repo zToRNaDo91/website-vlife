@@ -28,6 +28,14 @@
                         </a>
                     </li>
 					<?php } ?>
+					 <?php if ($admin) {?>
+					<li class="nav-item">
+                        <a class="nav-link" href="api.php">
+                            <i class="nc-icon nc-android"></i>
+                            <p>Gestion de l'API</p>
+                        </a>
+                    </li>
+					<?php } ?>
 					<li class="nav-item">
                         <a class="nav-link" href="typography.php">
                             <i class="nc-icon nc-paper-2"></i>

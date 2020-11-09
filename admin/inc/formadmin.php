@@ -29,14 +29,14 @@ header ('Location: ../');
 		
 			<form method="post" class="needs-validation" novalidate>
 			<fieldset>
-			<legend > Réponse Admin </legend> 	
+			<legend > Réponse Admin </legend> 
            <div class="custom-control custom-radio">
 			<input type="radio" id="accept" value = "accepter" name="choice"  class="custom-control-input" required>
-			<label class="custom-control-label" for="accept">Accepter</label>
+			<label class="custom-control-label" for="accept">Accepté</label>
 			</div>
 			<div class="custom-control custom-radio">
 			<input type="radio" id="refus" value ="refuser" name="choice"  class="custom-control-input refuser" >
-			<label  class="custom-control-label" for="refus" >Refuser &nbsp </label> 
+			<label  class="custom-control-label" for="refus" >Refusé</label> 
 			</div>
 			  <div>
 			 <select  class = "ref custom-select" style="display:none;" name="raison1">
@@ -56,7 +56,7 @@ header ('Location: ../');
 			
            <div class="custom-control custom-radio">
             <input type="radio" id="ban" name="choice" class="custom-control-input bannir">
-			<label class="custom-control-label" for="ban">Refuser à vie &nbsp </label>
+			<label class="custom-control-label" for="ban">Refusé à vie</label>
 			</div>
 				<div>
 				<select class = "vie custom-select" style="display:none;" name="raison2">

@@ -51,7 +51,7 @@ header ('Location: ../');
 				 
 				 <div class="tab">
 				  
-				  <p>👨‍🎓 Vous souhaitez intégrer un domaine de secours, sur notre serveur de simulation, ce bulletin d'adhésion constitue votre première démarche administrative pour votre recrutement.<br>
+				  <p>👨‍🎓 Vous souhaitez intégrer un domaine des secours, sur notre serveur de simulation, ce bulletin d'adhésion constitue votre première démarche administrative pour votre recrutement.<br>
 				  </p>
 				  <img src="assets/img/discord.png" width = "200px"></img>
 				  <p>
@@ -71,7 +71,7 @@ header ('Location: ../');
 				Nous ne traiterons aucune demande concernant les demandes de recrutement staff.<br>
 				<br>
 				ℹ | À la suite de votre candidature, <b>vous serez recontacté sur DISCORD, par message privé, sous 48h maximum</b>, si aucune réponse ne vous est formulée, merci de recontacter les ressources humaines via les salons disponibles prévus à cet effet.<br>
-				Pour toutes informations supplémentaires, veuillez vous référer au <button type="button" class="btn faq-button" data-toggle="modal" data-target="#FAQ">FAQ</button> 
+				Pour toute information supplémentaire, veuillez vous référer au <button type="button" class="btn faq-button" data-toggle="modal" data-target="#FAQ">FAQ</button> 
 				</p>
 				 </div>
 
@@ -170,7 +170,7 @@ header ('Location: ../');
 				  <p><b> Vos disponibilités</b></p> <br>
 				  
 				<div class="form-group">
-					  <label for="conge">Quelles sont vos disponibilités en période de congé/vacance ? <span style='color:red'>*</span></label>
+					  <label for="conge">Quelles sont vos disponibilités en période de congés/vacances ? <span style='color:red'>*</span></label>
 					  <input type="text" name="conge" class="form-control" id="conge" maxlength="100" required/>
 					  <div class="invalid-feedback">
 						  Merci de remplir cette partie.
@@ -184,7 +184,7 @@ header ('Location: ../');
 						</div>
 				</div>
 				<div class="form-group">
-					  <label for="absent"> Avez-vous des impératifs pouvant vous faire arriver en retard ou être absent à plusieurs sessions ? <i>(Embouteillage, Vie familial etc...) <span style='color:red'>*</span></i></label>
+					  <label for="absent"> Avez-vous des impératifs pouvant vous faire arriver en retard ou être absent à plusieurs sessions ? <i>(Embouteillages, Vie familiale etc...) <span style='color:red'>*</span></i></label>
 					  <input type="text" name="absent" class="form-control" id="absent" maxlength="100" required/>
 					  <div class="invalid-feedback">
 						  Merci de remplir cette partie.
@@ -206,7 +206,7 @@ header ('Location: ../');
 					<i>👉 Le poste "Organisme civil / Vie civile" comprend l'accès à la vie civile du serveur, <br>
 					mais aussi le Volontaire Service Civique des sapeurs pompiers (mission de secourisme à l'ambulance),
 					et l'Adjoint de Sécurité de la police nationale (patrouille avec des gardiens de la paix).<br>
-					Seul la vie civil est accessible dès 15 ans, le reste est accessible à partir de 16 ans</i>
+					Seule la vie civile est accessible dès 15 ans, le reste est accessible à partir de 16 ans</i>
 					</label>
 				  <select style="color:black;" class="custom-select" name="poste" id="poste" maxlength="100" required>
 				  <option selected value="" required>Sélectionner un poste</option>
@@ -214,7 +214,7 @@ header ('Location: ../');
 				  <option value="Police">Police Nationale</option>
 				  <option value="SAMU">SAMU 93 / SMUR</option>
 				  <option value="Opérateur 15">Opérateur 15</option>
-				  <option value="Civil">Organisme civil / Vie Civil</option>
+				  <option value="Civil">Organisme civil / Vie Civile</option>
 				</select>
 				<div class="invalid-feedback">
 						  Merci de sélectionner un poste.
@@ -243,7 +243,7 @@ header ('Location: ../');
 				</div>
 				
 				<div class="col-md-10 col-sm-10 col-xs-12 form-group">
-					<label class="labeltext" for="metier">Avez-vous de l'expérience réel, dans un métier de secours ? <span style='color:red'>*</span></label><br>
+					<label class="labeltext" for="metier">Avez-vous de l'expérience réelle, dans un métier de secours ? <span style='color:red'>*</span></label><br>
 					<div class="custom-control custom-radio" style="display:inline-block">
 					  <input class="custom-control-input" type="radio" id="metier1" name="metier" value="Oui"  onclick="show(1,2)">
 					  <label class="custom-control-label" for="metier1">Oui</label>
@@ -268,14 +268,14 @@ header ('Location: ../');
 				  <p><b> Rédaction : </b></p> <br>
 				  
 				<div class="form-group">
-					  <label for="motive">Présentez votre motivation pour nous rejoindre <span style='color:red'>*</span></label>
+					  <label for="motive">Présentez vos motivations pour nous rejoindre <span style='color:red'>*</span></label>
 					  <textarea name="motive" class="form-control" id="motive" minlength="30" maxlength="830" required  data-limit-rows="true" rows="10" ligne="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
 						</div>
 				</div>
 				<div class="form-group">
-					  <label for="scenario">Inventez une intervention/scénario quotidienne/commune roleplay que vous pourrez réaliser en tant que civil pour les secours <span style='color:red'>*</span></label>
+					  <label for="scenario">Inventez un scénario d'intervention quotidienne/commune roleplay, que vous pourrez réaliser en tant que civil, pour les secours <span style='color:red'>*</span></label>
 					  <textarea name="scenario" class="form-control" id="scenario" minlength="30" maxlength="830" required  data-limit-rows="true" rows="10" ligne="20"/></textarea>
 					  <div class="invalid-feedback">
 						  Merci de mettre minimum 30 caractères. 
@@ -325,7 +325,7 @@ header ('Location: ../');
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ConditionsLabel" style="color:black;">Conditions d'utilisations de vos données</h5>
+        <h5 class="modal-title" id="ConditionsLabel" style="color:black;">Conditions d'utilisation de vos données</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -340,7 +340,7 @@ Les données sont conservées pendant 3 ans, pour la préservation du résultat.
 Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacement ou exercer votre droit à la limitation du traitement de vos données. (en fonction de la base légale du traitement, mentionner également)<br>
 Vous pouvez retirer à tout moment votre consentement au traitement de vos données ;<br> 
 Vous pouvez également vous opposer au traitement de vos données ;<br> 
-Vous pouvez également exercer votre droit à la portabilité de vos données)<br><br>
+Vous pouvez également exercer votre droit à la portabilité de vos données.<br><br>
 
 Consultez le site cnil.fr pour plus d’informations sur vos droits.<br><br>
 
@@ -386,10 +386,10 @@ Si vous estimez, après nous avoir contactés, que vos droits « Informatique et
 					if (this.value <= "15") {
 					
 					
-					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Civil'>Organisme civil / Vie Civil</option>");
+					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Civil'>Organisme civil / Vie Civile</option>");
 					}
 					else{
-					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Pompier'> Sapeurs-Pompiers</option><option value='SAMU'>SAMU 93 / SMUR</option><option value='Police'>Police Nationale</option><option value='Opérateur 15'>Opérateur 15</option><option value='Civil'>Organisme civil / Vie Civil</option>");
+					$("#poste").html("<option selected value='' required> Sélectionner un poste</option><option value='Pompier'> Sapeurs-Pompiers</option><option value='SAMU'>SAMU 93 / SMUR</option><option value='Police'>Police Nationale</option><option value='Opérateur 15'>Opérateur 15</option><option value='Civil'>Organisme civil / Vie Civile</option>");
 					}
 					});
 			});

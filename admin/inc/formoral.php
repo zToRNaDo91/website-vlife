@@ -103,7 +103,7 @@ $(window).on('load', function() {
 		 
 		<div class="custom-control custom-radio">
 			<input type="radio" id="accep" value = "Accepter" name="oral" class="custom-control-input" required> 
-			<label class="custom-control-label" for="accep" class="custom-control-input"> Accepter</label>
+			<label class="custom-control-label" for="accep" class="custom-control-input">Accepté</label>
 			</div>
 			 <div class="multiselect" style="display:none;">
 			<div class="selectBox" onclick="showCheckboxes()">
@@ -191,22 +191,22 @@ $(window).on('load', function() {
 		  </div>
 		  <div class="pseudo" style="margin-top: 5px;display:none;">
 		  <label for="Pseudo" style="display: ruby-base;">Pseudo : </label>	
-		  <input type="text" class="form-control" name="pseudo" id="Pseudo" style="width:150px;height:30px;margin-left: 90px;margin-top: -30px;"> 
+		  <input type="text" class="form-control" name="pseudo" placeholder="nouveau pseudo" id="Pseudo" style="width:150px;height:30px;margin-left: 90px;margin-top: -30px;"> 
 		  </div>
 		<div class="custom-control custom-radio">
 		<input type="radio" id="refuse" value = "Refuser" name="oral" class="custom-control-input"> 
 		
-		<label class="custom-control-label" for="refuse"> Refuser</label><br> 
+		<label class="custom-control-label" for="refuse">Refusé</label><br> 
 		</div>
 		
 
-		<input type="text" class="form-control refas"  name="raisonoral" style="width:150px;height:30px;margin-left: 90px;margin-top: -30px; display:none;"> 
+		<input type="text" class="form-control refas" placeholder="raison du refus" = name="raisonoral" style="width:150px;height:30px;margin-left: 90px;margin-top: -30px; display:none;"> 
 		 <div class="invalid-feedback">
        Merci d'ajouter une raison. 
 		</div>
 			<div class="custom-control custom-radio">
 				<input type="radio" id="bane" name="oral" value="ban" class="custom-control-input bannir">
-				<label class="custom-control-label" for="bane">Refuser à vie</label>
+				<label class="custom-control-label" for="bane">Refusé à vie</label>
 				<div class="invalid-feedback">
 					Merci de cocher une case.
 					</div>	

@@ -47,86 +47,13 @@ if ($admin or $recruteur) {
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
 	<link href="assets/css/details.css" rel="stylesheet" />
+	<link href="assets/css/details2.css" rel="stylesheet" />
 	<link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<style>
-.fa {
-	width:-1px;
-	font-size: 20px;
-	text-align: center;
-	bottom: 5px;
-	position: relative;
-}
-.toggle {
-  background-color: #ddddde;
-  border-radius: 60px;  
-  box-shadow: 0 1px 1px 0 rgba(255,255,255,.4), 0 1px 0 0 rgba(0,0,0,0.10) inset;
-  cursor: pointer;
-  width: 90px;
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-  top: 5px;
-  right:5px;
-  transition: all .25s linear;
-  float:right;
-}
-.toggle .slide {
-  color: #818283;
-  color: rgba(0,0,0,.15);
-  background: #efefef;
-  border-radius: 50%;
-  font-size: 30px;
-  line-height: 34px;
-  text-align: center;
-  text-decoration: none;
-  height: 33px;
-  width: 33px;
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15), 0 1px 1px 0 rgba(255,255,255,.8) inset;
-  transition: all 0.3s cubic-bezier(0.43, 1.3, 0.86, 1);
-}
-.toggle .slide span{
-    text-shadow: 0 1px 1px rgba(255,255,255,.7), 0 0 1px rgba(0,0,0,.3);       
-}
-.toggle .slide:before, 
-.toggle .slide:after {
-  color: #FFF;
-  content: "\f023";
-  font-family: fontAwesome;
-  font-size: 34px;
-  font-weight: 400;
-  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-  -webkit-font-smoothing: antialiased;
-  position: absolute;
-}
-.toggle .slide:before {
-  right: -30px;
-  color: #2a2b2c;
-  opacity: 0.2;
-}
-.toggle .slide:after {
-  content: "\f09c";
-  left: -40px;
-  color: #00ba00;
-}
-.toggle.on {
-  background: #00dc00;
-}
-.toggle.on .slide {
-  left: 50px;
-  color: #00d100;
-}
-.low {
-	position: relative;
-	top: 40px;
-}
-	</style>
+
 </head>
 <body>
 <?php
@@ -229,7 +156,7 @@ if ($admin or $recruteur) {
 	else {
 	 echo '<div readonly class="form-control-plaintext data">'.$passion.'</div><br><br>';
 	}
-	echo "Travail dans un service pro ? <span style='background-color:yellow;'>".$row['metier'].'</span><br>';
+	echo "Travaille dans un service pro ? <span style='background-color:yellow;'>".$row['metier'].'</span><br>';
 	echo "Service et période d'activité : ";
 	$time = $row['met'];
     $numb = strlen($time);
@@ -249,7 +176,7 @@ if ($admin or $recruteur) {
 	echo "En posession d'un micro ? <span style='background-color:yellow;'>".$row['micro']."</span><br>";
 	echo "En possession de GTA V sur PC ? <span style='background-color:yellow;'>".$row['gta']."</span><br><br><br>";
 	
-	echo 'Disponibilités en période congé/vacance :<br>';
+	echo 'Disponibilités en période congés/vacances :<br>';
 	$conge = $row['conge'];
 	$nbconge = strlen($conge);
 	if ($nbconge <= 32 ) {
@@ -267,7 +194,7 @@ if ($admin or $recruteur) {
 	else {
 	 echo '<div readonly class="form-control-plaintext data">'.$travail.'</div><br>';
 	}
-	echo 'Impératifs pouvant occassioné un retard ou une absence :<br>';
+	echo 'Impératifs pouvant occassioner un retard ou une absence :<br>';
 	$absent = $row['absent'];
 	$nbabsent = strlen($absent);
 	if ($nbabsent <= 32 ) {
@@ -286,7 +213,7 @@ if ($admin or $recruteur) {
 	 echo '<div readonly class="form-control-plaintext data">'.$dispo.'</div><br><br>';
 	}
 	
-	echo "Experience Rôleplay :";
+	echo "Expériences Roleplay :";
 	$xp = $row['XP'];
 	$xp = str_replace ('"', '', $xp);
 	echo '<div readonly class="form-control-plaintext data">'.$xp.'</div><br><br>';
@@ -294,17 +221,17 @@ if ($admin or $recruteur) {
 	$gameplay = $row['RP'];
 	$gameplay = str_replace ('"', '', $gameplay);
 	echo '<div readonly class="form-control-plaintext data">'.$gameplay.'</div><br><br>';
-	echo "Qualité nécessaire au poste :<br>";
+	echo "Qualité(s) nécessaire(s) au poste :<br>";
 	$qualite = $row['qual'];
 	$qualite = str_replace ('"', '', $qualite);
 	echo '<div readonly class="form-control-plaintext data">'.$qualite.'</div><br><br>';
 	$motivation = $row['motive'];
 	$motivation = str_replace ('"', '', $motivation);
 	if (!empty($motivation)){
-	echo "Motivation pour nous rejoindre :";
+	echo "Motivations pour nous rejoindre :";
 	echo '<div readonly class="form-control-plaintext data">'.$motivation.'</div><br><br>';
 	}
-	echo "Scénario RP quotidienne en tant que civil, pour les secours : <br>";
+	echo "Scénario RP quotidien en tant que civil, pour les secours : <br>";
     $scenario = $row['scenario'];
 	$scenario = str_replace ('"', '', $scenario);
 	echo '<div readonly class="form-control-plaintext data">'.$scenario.'</div><br><br>';
@@ -321,7 +248,7 @@ if ($admin or $recruteur) {
 	if (!empty ($autre)) {
 	echo '<div class="custom-control custom-checkbox mb-3">
 		<input type="checkbox" name ="validation" class="custom-control-input" id="validation" value="valide" disabled checked>
-		<label class="custom-control-label" for="validation">Le candidat à accepter les conditions d\'utilisation de ses données et confirme avoir 15 ans ou plus.</label>
+		<label class="custom-control-label" for="validation">Le candidat a accepté les conditions d\'utilisation de ses données et confirme avoir 15 ans ou plus.</label>
 		<div class="invalid-feedback">Merci de cocher.</div>
 		</div>';
 	}
@@ -338,9 +265,25 @@ if ($admin or $recruteur) {
 		echo 'Candidature déverrouillée par : '. $verrouiller ;
 		}
 		}
+	$statut = $row['name'];
+	if ($statut == 'Accepter') {
+	$statut = 'Accepté';
+	}else if ($statut == 'Refuser') {
+	$statut = 'Refusé';
+	}else {
+	$statut = $statut;
+	}
+	$statut2 = $row3['oral'];
+	if ($statut2 == 'Accepter') {
+	$statut2 = 'Accepté';
+	}else if ($statut2 == 'Refuser') {
+	$statut2 = 'Refusé';
+	}else {
+	$statut2 = $statut2;
+	}
 	if ($row['category_id'] != 1) {
 		if ($row3['traitement'] != '') {
-			echo '<br>Status : '.$row['name'].'   à l\'écrit<br> Traité par : '.$row3['traitement'].'<br> En date du : '.$date_traitement.'<br> ';
+			echo '<br>Statut : '.$statut.'   à l\'écrit<br> Traitée par : '.$row3['traitement'].'<br> En date du : '.$date_traitement.'<br> ';
 			if ($row['raison'] != '' and $row['category_id'] != 2) {
 			echo 'Raison: '.$row['raison'].'<br>';
 			}
@@ -350,12 +293,12 @@ if ($admin or $recruteur) {
 			}
 		}
 		if ($row3['admin'] != '') {
-			echo '<br>Modifier par Admin '.$row3['admin'].' <br>';
+			echo '<br>Modifiée par Admin '.$row3['admin'].' <br>';
 		}
 		
 		if ($row3['oral'] != '') {
 		$commentaire = $row3['commentaire'];
-			echo '<br>Résultat entretien oral :  '.$row3['oral'].' <br>';
+			echo '<br>Résultat entretien oral :  '.$statut2.' <br>';
 			if ($row3['raison_oral'] != '') {
 			echo 'Pour la raison suivante :  '.$row3['raison_oral'].' <br>';
 			}
